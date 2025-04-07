@@ -45,6 +45,5 @@ data-driven tools and recommendations to:
 📌 BO6: Identify volunteer plants and determine if they are  
         helpful medicinal plants or harmful weeds.
 
-=======================================================================
 🌱 Empowering Tunisia’s Farmers Through Technology
 =======================================================================
