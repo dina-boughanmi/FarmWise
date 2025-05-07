@@ -1,0 +1,198 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+   <!--==============================
+			login Area
+	==============================-->
+
+    <style>
+        body {
+            background-color: #fdfcf5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        .login-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            border: 3px solid #375d4c;
+            border-radius: 8px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06);
+            background-color: white;
+        }
+    
+        .card-header img {
+            max-width: 140px;
+        }
+    
+        .input-group .input-group-prepend .input-group-text {
+            background-color: #fff8e1;
+            border: 1px solid #ced4da;
+            border-right: none;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .input-group .form-control {
+            border-left: none;
+            height: 45px;
+            font-size: 0.95rem;
+        }
+    
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    
+        .form-check {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+    
+        .btn-warning {
+            background-color: #f1c40f;
+            border-color: #f1c40f;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+    
+        .btn-warning:hover {
+            background-color: #d4ac0d;
+            border-color: #d4ac0d;
+        }
+    
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .social-login a {
+            width: 48%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    
+        .btn-google {
+            background-color: #db4437;
+        }
+    
+        .btn-facebook {
+            background-color: #3b5998;
+        }
+    
+        .card-footer a {
+            color: #f1c40f;
+        }
+    
+        .card-footer a:hover {
+            text-decoration: underline;
+        }
+        .w-48 { width: 48%; }
+
+    </style>
+    
+    <body>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+          <div class="card login-card shadow-lg rounded-lg" style="width: 100%; max-width: 420px;">
+            <div class="card-header text-center bg-white border-0">
+              <img src="{% static 'main/img/PINE--FOREST.png' %}" alt="AgroNexus Logo" class="mb-3" style="max-width: 150px;">
+              <h4 class="mb-0 text-dark fw-bold">Sign In</h4>
+              <small class="text-muted">Access your AgroNexus account</small>
+            </div>
+      
+            <div class="card-body px-4">
+                {% if messages %}
+          <div class="mb-3">
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+              <form method="POST" action="{% url 'login' %}">
+                {% csrf_token %}
+      
+                <div class="form-group mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-user"></i></span>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+                  </div>
+                </div>
+      
+                <div class="form-group mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <div class="input-group" id="show_hide_password">
+                    <span class="input-group-text bg-white"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                    <span class="input-group-text bg-white toggle-password" style="cursor: pointer;">
+                      <i class="fas fa-eye-slash" id="togglePasswordIcon"></i>
+                    </span>
+                  </div>
+                </div>
+      
+                <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="remember">
+                  <label for="remember" class="form-check-label text-muted">Remember Me</label>
+                </div>
+      
+                <div class="text-center mb-3">
+                  <button type="submit" class="btn btn-warning w-100 fw-bold">Login</button>
+                </div>
+      
+                <div class="d-flex justify-content-between mb-3">
+                  <a href="#" class="btn btn-outline-danger w-48"><i class="fab fa-google me-1"></i> Google</a>
+                  <a href="#" class="btn btn-outline-primary w-48"><i class="fab fa-facebook-f me-1"></i> Facebook</a>
+                </div>
+              </form>
+            </div>
+      
+            <div class="card-footer text-center bg-white border-0">
+              <p class="mb-1 text-muted">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+              <a href="#" class="small text-muted">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+          document.querySelector('.toggle-password').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const icon = document.getElementById('togglePasswordIcon');
+      
+            if (passwordInput.type === 'password') {
+              passwordInput.type = 'text';
+              icon.classList.remove('fa-eye-slash');
+              icon.classList.add('fa-eye');
+            } else {
+              passwordInput.type = 'password';
+              icon.classList.remove('fa-eye');
+              icon.classList.add('fa-eye-slash');
+            }
+          });
+        </script>
+      </body>
+      
+
+{% endblock %}
