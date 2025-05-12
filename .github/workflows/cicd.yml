@@ -1,17 +1,15 @@
-# Continuous Integration Workflow for Django (No DB)
-
 name: Continuous Integration
 
 on:
   push:
-    branches: [ "dina-boughanmi-cicd" ]
+    branches: [ "dina-boughanmi" ]
   pull_request:
-    branches: [ "dina-boughanmi-cicd" ]
+    branches: [ "dina-boughanmi" ]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     env:
       DJANGO_SETTINGS_MODULE: farmwise.settings
@@ -26,10 +24,10 @@ jobs:
         with:
           python-version: 3.10
 
-      - name: Install dependencies
+      - name: Install Django (fallback if no requirements.txt)
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install django
 
       - name: Run Django tests
         run: python manage.py test
