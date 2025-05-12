@@ -1,99 +1,218 @@
-
 {% extends "main/base.html" %}
 {% load static %}
 
 {% block content %}
 
-  
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
-        <div class="container z-index-common">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Disease Detection</h1>
-            </div>
-            <div class="breadcumb-menu-wrap">
-                <ul class="breadcumb-menu">
-                    <li><a href="index-2.html">Home</a></li>
-                    <li>Disease Detection</li>
-                </ul>
-            </div>
-        </div>
+<div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+  <div class="container z-index-common">
+    <div class="breadcumb-content">
+      <h1 class="breadcumb-title">Disease Detection</h1>
     </div>
+    <div class="breadcumb-menu-wrap">
+      <ul class="breadcumb-menu">
+        <li><a href="index-2.html">Home</a></li>
+        <li>Disease Detection</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <!--==============================
 			disease area Area
 	==============================-->
-    <section class="disease-form-section py-5">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="display-6 fw-bold text-dark">🦠 Crop Disease Detector</h2>
-            <p class="text-muted fs-5">Upload a photo of your plant and enter its name to identify diseases accurately.</p>
-          </div>
-      
-          <div class="form-card p-5 mx-auto text-center">
-            <form enctype="multipart/form-data">
-              <div class="mb-4">
-                <div class="mb-4 w-75 mx-auto">
-                    <label for="plantName" class="form-label fw-semibold">🌱 Plant Name</label>
-                    <input type="text" class="form-control text-center" id="plantName" placeholder="e.g., Tomato">
-                  </div>
-                  <label for="diseaseImage" class="form-label fw-semibold">🌿 Upload Plant Image</label>
+<section class="disease-form-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold text-dark">🦠 Crop Disease Detector</h2>
+      <p class="text-muted fs-5">Upload a photo of your plant and enter its name to identify diseases accurately.</p>
+    </div>
 
-                <div class="upload-box mx-auto" onclick="document.getElementById('diseaseImage').click();">
-                  <i class="bi bi-cloud-upload-fill fs-1 text-success"></i>
-                  <p class="mt-2 text-muted">Click to upload or drag a file here</p>
-                  <input type="file" class="form-control visually-hidden" id="diseaseImage" accept="image/*" onchange="previewImage(event)">
-                  <img id="preview" class="img-fluid mt-3 d-none rounded shadow-sm" style="max-height: 200px;" />
-                </div>
-              </div>
-      
-             
-              <button type="submit" class="btn btn-success px-5 py-2 fs-5 fw-semibold shadow">
-                🔍 Detect Disease
-              </button>
-            </form>
+    <div class="form-card p-5 mx-auto text-center">
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% if error %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Error!</strong> {{ error }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+
+        <div class="mb-4">
+          <div class="mb-4 w-75 mx-auto">
+            <label for="plantName" class="form-label fw-semibold">🌱 Plant Name</label>
+            <input type="text" class="form-control text-center" id="plantName" name="plant_name"
+              placeholder="e.g., Tomato" value="{{ plant_name|default:'' }}">
+          </div>
+
+          <label for="diseaseImage" class="form-label fw-semibold">🌿 Upload Plant Image</label>
+
+          <div class="upload-box mx-auto" onclick="document.getElementById('diseaseImage').click();">
+            <i class="bi bi-cloud-upload-fill fs-1 text-success"></i>
+            <p class="mt-2 text-muted">Click to upload or drag a file here</p>
+            <input type="file" class="form-control visually-hidden" id="diseaseImage" name="image" accept="image/*"
+              onchange="previewImage(event)" required>
+            <img id="preview" class="img-fluid mt-3 d-none rounded shadow-sm" style="max-height: 200px;" />
           </div>
         </div>
-      </section>
-      
-      
-      
+
+        <button type="submit" class="btn btn-success px-5 py-2 fs-5 fw-semibold shadow">
+          🔍 Detect Disease
+        </button>
+      </form>
+    </div>
+
+    {% if predictions %}
+    <div class="results-card mt-5 p-5 mx-auto bg-white rounded-3 shadow-sm" style="max-width: 800px;">
+      <h3 class="text-center mb-4 fw-bold">
+        {% if plant_name %}
+        Results for <span class="text-success">{{ plant_name }}</span>
+        {% else %}
+        Detection Results
+        {% endif %}
+      </h3>
+
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Disease</th>
+              <th>Confidence</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for name, confidence in predictions %}
+            <tr {% if forloop.first %}class="table-success" {% endif %}>
+              <td>{{ name }}</td>
+              <td>{{ confidence|floatformat:2 }}%</td>
+              <td>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar {% if forloop.first %}bg-success{% else %}bg-info{% endif %}"
+                    role="progressbar" style="width: {{ confidence|floatformat:0 }}%"
+                    aria-valuenow="{{ confidence|floatformat:0 }}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      {% if predictions.0 %}
+      <div class="alert alert-success mt-4 text-center">
+        <h4 class="alert-heading">Recommended Diagnosis</h4>
+        <p>{{ predictions.0.0 }} with {{ predictions.0.1|floatformat:2 }}% confidence</p>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
 <style>
-.form-card {
-  max-width: 600px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 128, 0, 0.1);
-  animation: fadeSlideIn 0.6s ease-out forwards;
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .form-card {
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 128, 0, 0.1);
+    animation: fadeSlideIn 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(40px);
   }
-}
 
-.upload-box {
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border: 2px dashed #ccc;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background 0.3s ease, border-color 0.3s ease;
-  max-width: 100%;
-}
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-.upload-box:hover {
-  background-color: #e8f5e9;
-  border-color: #198754;
-}
+  .upload-box {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 100%;
+  }
 
+  .upload-box:hover {
+    background-color: #e8f5e9;
+    border-color: #198754;
+  }
 
+  .results-card {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .table-success {
+    --bs-table-bg: rgba(25, 135, 84, 0.1);
+    --bs-table-hover-bg: rgba(25, 135, 84, 0.2);
+  }
 </style>
 
+
+{% endblock %}
+{% block java%}
+
+<script>
+  function previewImage(event) {
+    const input = event.target;
+    const preview = document.getElementById('preview');
+
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.classList.remove('d-none');
+      }
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  // Drag and drop functionality
+  const uploadBox = document.querySelector('.upload-box');
+  const fileInput = document.getElementById('diseaseImage');
+
+  uploadBox.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadBox.classList.add('border-success');
+    uploadBox.style.backgroundColor = '#e8f5e9';
+  });
+
+  uploadBox.addEventListener('dragleave', () => {
+    uploadBox.classList.remove('border-success');
+    uploadBox.style.backgroundColor = '#f9f9f9';
+  });
+
+  uploadBox.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadBox.classList.remove('border-success');
+    uploadBox.style.backgroundColor = '#f9f9f9';
+
+    if (e.dataTransfer.files.length) {
+      fileInput.files = e.dataTransfer.files;
+      const event = new Event('change');
+      fileInput.dispatchEvent(event);
+    }
+  });
+</script>
 {% endblock %}
