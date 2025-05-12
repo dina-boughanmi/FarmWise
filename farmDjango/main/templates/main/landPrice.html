@@ -31,51 +31,110 @@
             <p class="text-muted fs-5">Fill in the land details to estimate its market value accurately.</p>
           </div>
           <div class="form-card mx-auto p-5 shadow-lg">
-            <form>
+            <form id="predictForm">
+              {% csrf_token %}
               <div class="row g-4">
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">📐 Surface (m²)</label>
-                  <input type="number" class="form-control fancy-input" placeholder="Enter land surface" />
+                  <input type="number" name="Surface" class="form-control fancy-input" placeholder="Enter land surface" />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🏞️ State</label>
+                  <select id="state" name="State" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez un state --</option>
+                  </select>
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">📌 Emplacement</label>
-                  <input type="text" class="form-control fancy-input" placeholder="e.g., Urban, Rural" />
+                  <select id="emplacement" name="Emplacement" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez un emplacement --</option>
+                  </select>
                 </div>
       
-                <div class="col-md-4">
-                  <label class="form-label fw-semibold">🏞️ State</label>
-                  <input type="text" class="form-control fancy-input" placeholder="Enter State" />
-                </div>
+
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">🗺️ LNDF</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter LNDF" />
+                  <select name="LNDF" id="lndf" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez un LNDF --</option>
+                    <option value="SH">SH</option>
+                    <option value="LP">LP</option>
+                    <option value="LV">LV</option>
+                    <option value="SP">SP</option>
+                    <option value="LF">LF</option>
+                    <option value="TH">TH</option>
+                    <option value="LD">LD</option>
+                  </select>
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">📊 CLAF</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter CLAF" />
+                  <select name="CLAF" id="claf" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez un CLAF --</option>
+                    <option value="CMc">CMc</option>
+                    <option value="SCn">SCn</option>
+                    <option value="VRe">VRe</option>
+                    <option value="SCg">SCg</option>
+                    <option value="GLe">GLe</option>
+                    <option value="RGc">RGc</option>
+                    <option value="KSk">KSk</option>
+                    <option value="LPk">LPk</option>
+                    <option value="FLe">FLe</option>
+                    <option value="LVj">LVj</option>
+                    <option value="VRk">VRk</option>
+                    <option value="FLs">FLs</option>
+                    <option value="RGe">RGe</option>
+                    <option value="LXh">LXh</option>
+                    <option value="LPe">LPe</option>
+                    <option value="ARh">ARh</option>
+                    <option value="GLk">GLk</option>
+                    <option value="CLl">CLl</option>
+                    <option value="GYp">GYp</option>
+                    <option value="ARc">ARc</option>
+                    <option value="SNk">SNk</option>
+                    <option value="LVk">LVk</option>
+                    <option value="FLc">FLc</option>
+                    <option value="CLh">CLh</option>
+                    <option value="CMv">CMv</option>
+                    <option value="PZh">PZh</option>
+                    <option value="SCy">SCy</option>
+                  </select>
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">🌊 Drain</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Drainage Capacity" />
+                  <select name="Drain" id="drain" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez Type de Drainage --</option>
+                    <option value="M">M</option>
+                    <option value="P">P</option>
+                    <option value="W">W</option>
+                    <option value="I">I</option>
+                    <option value="S">S</option>
+                    <option value="E">E</option>
+                  </select>
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">🧱 PSCL</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter PSCL" />
+                  <select name="PSCL" id="pscl" class="form-control fancy-input" required>
+                    <option value="">-- Sélectionnez un PSCL --</option>
+                    <option value="F">F</option>
+                    <option value="M">M</option> 
+                    <option value="V">V</option>
+                    <option value="C">C</option>
+                  </select>
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">💧 TAWC</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter TAWC" />
+                  <input type="number" name="TAWC" step="0.1" class="form-control fancy-input" placeholder="Enter TAWC" />
                 </div>
       
                 <div class="col-md-4">
                   <label class="form-label fw-semibold">🧪 PHAQ</label>
-                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter PHAQ" />
+                  <input type="number" name="PHAQ" step="0.1" class="form-control fancy-input" placeholder="Enter PHAQ" />
                 </div>
               </div>
       
@@ -83,6 +142,162 @@
                 <button type="submit" class="btn btn-success px-5 py-2 fs-5 fw-semibold shadow-sm">💡 Estimate Price</button>
               </div>
             </form>
+            
+                          <!-- Ajout de l'élément pour afficher le résultat -->
+            <div id="result" class="alert mt-4 text-center d-none" role="alert"></div>
+
+            <div id="downloadBtnContainer" class="text-center mt-3 d-none">
+              <button id="downloadBtn" class="btn btn-outline-success">
+                  📄 Download Prediction PDF
+              </button>
+            </div>
+                          
+            <div class="container mt-5">
+  <h2 class="mb-4">Explication des Champs</h2>
+
+  <div class="accordion" id="explanationAccordion">
+
+    <!-- LNDF -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingLNDF">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLNDF" aria-expanded="true" aria-controls="collapseLNDF">
+          🗺️ LNDF (Type de Relief)
+        </button>
+      </h2>
+      <div id="collapseLNDF" class="accordion-collapse collapse show" aria-labelledby="headingLNDF" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>SH</strong> : Collines abruptes</li>
+            <li><strong>LP</strong> : Plaines basses</li>
+            <li><strong>LV</strong> : Plaines vallonnées</li>
+            <li><strong>SP</strong> : Pentes douces</li>
+            <li><strong>LF</strong> : Terrains plats</li>
+            <li><strong>TH</strong> : Terrains en terrasses</li>
+            <li><strong>LD</strong> : Dépressions ou zones basses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLAF -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingCLAF">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCLAF" aria-expanded="false" aria-controls="collapseCLAF">
+          📊 CLAF (Classification des Sols - FAO)
+        </button>
+      </h2>
+      <div id="collapseCLAF" class="accordion-collapse collapse" aria-labelledby="headingCLAF" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          <ul style="columns: 2;">
+            <li><strong>CMc</strong> : Cambisol calcique</li>
+            <li><strong>SCn</strong> : Solonetz non sodique</li>
+            <li><strong>VRe</strong> : Vertisol épisodique</li>
+            <li><strong>SCg</strong> : Solonchak gleyique</li>
+            <li><strong>GLe</strong> : Gleysol eutrique</li>
+            <li><strong>RGc</strong> : Regosol calcique</li>
+            <li><strong>KSk</strong> : Kastanozem calcique</li>
+            <li><strong>LPk</strong> : Leptosol calcique</li>
+            <li><strong>FLe</strong> : Fluvisol eutrique</li>
+            <li><strong>LVj</strong> : Luvisol juvénile</li>
+            <li><strong>VRk</strong> : Vertisol calcique</li>
+            <li><strong>FLs</strong> : Fluvisol salin</li>
+            <li><strong>RGe</strong> : Regosol eutrique</li>
+            <li><strong>LXh</strong> : Lixisol humique</li>
+            <li><strong>LPe</strong> : Leptosol eutrique</li>
+            <li><strong>ARh</strong> : Acrisols humiques</li>
+            <li><strong>GLk</strong> : Gleysol calcique</li>
+            <li><strong>CLl</strong> : Calcisol lessivé</li>
+            <li><strong>GYp</strong> : Gypsisol</li>
+            <li><strong>ARc</strong> : Acrisols calcique</li>
+            <li><strong>SNk</strong> : Solonetz calcique</li>
+            <li><strong>LVk</strong> : Luvisol calcique</li>
+            <li><strong>FLc</strong> : Fluvisol calcique</li>
+            <li><strong>CLh</strong> : Calcisol humique</li>
+            <li><strong>CMv</strong> : Cambisol vertique</li>
+            <li><strong>PZh</strong> : Podzol humique</li>
+            <li><strong>SCy</strong> : Solonchak sodique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drain -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingDrain">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDrain" aria-expanded="false" aria-controls="collapseDrain">
+          🌊 Drain (Drainage du Sol)
+        </button>
+      </h2>
+      <div id="collapseDrain" class="accordion-collapse collapse" aria-labelledby="headingDrain" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>M</strong> : Drainage modéré</li>
+            <li><strong>P</strong> : Drainage pauvre</li>
+            <li><strong>W</strong> : Drainage bien</li>
+            <li><strong>I</strong> : Drainage imparfait</li>
+            <li><strong>S</strong> : Drainage superficiel</li>
+            <li><strong>E</strong> : Drainage excessif</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PSCL -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPSCL">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePSCL" aria-expanded="false" aria-controls="collapsePSCL">
+          🧱 PSCL (Texture du Sol - FAO)
+        </button>
+      </h2>
+      <div id="collapsePSCL" class="accordion-collapse collapse" aria-labelledby="headingPSCL" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>F</strong> : Texture fine</li>
+            <li><strong>M</strong> : Texture moyenne</li>
+            <li><strong>V</strong> : Texture grossière</li>
+            <li><strong>C</strong> : Texture très grossière</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAWC -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTAWC">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTAWC" aria-expanded="false" aria-controls="collapseTAWC">
+          💧 TAWC (Capacité Totale d'Eau Disponible)
+        </button>
+      </h2>
+      <div id="collapseTAWC" class="accordion-collapse collapse" aria-labelledby="headingTAWC" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          Représente la quantité d’eau que le sol peut stocker et rendre disponible aux plantes. Plus la valeur est élevée, mieux le sol retient l’humidité pour les cultures.
+        </div>
+      </div>
+    </div>
+
+    <!-- PHAQ -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPHAQ">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePHAQ" aria-expanded="false" aria-controls="collapsePHAQ">
+          🧪 PHAQ (pH du Sol)
+        </button>
+      </h2>
+      <div id="collapsePHAQ" class="accordion-collapse collapse" aria-labelledby="headingPHAQ" data-bs-parent="#explanationAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>&lt; 5.5</strong> : Sol acide — faible disponibilité en nutriments.</li>
+            <li><strong>5.5 - 7.0</strong> : Sol légèrement acide à neutre — optimal pour la plupart des cultures.</li>
+            <li><strong>&gt; 7.0</strong> : Sol alcalin — peut réduire l’absorption de certains nutriments.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+            
+
           </div>
         </div>
       </section>
@@ -129,7 +344,159 @@
           }
         }
         </style>
-        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  const stateEmplacementData = {
+    "Ariana": ["El Menzah", "Mnihla", "Ariana", "La Soukra"],
+    "Beja": ["Testour"],
+    "Ben Arous": ["Boumhel Bassatine", "Mornag", "Megrine", "Ben Arous"],
+    "Bizerte": ["Bizerte"],
+    "Gafsa": ["Redeyef"],
+    "Kairouan": ["Kairouan"],
+    "Mahdia": ["Salakta", "Rejiche", "Chebba", "Ksour Essef"],
+    "Manubah": ["La Manouba"],
+    "Monastir": ["Monastir", "Ksibet el Madiouni", "Sahline", "Ksar Hellal"],
+    "Nabeul": ["kelibia", "Nabeul", "Hamem ghzez", "Hammamet", "Bir Bouregba", "Dar Allouche", "kerkouane", "Beni Khiar"],
+    "Sfax": ["Sfax"],
+    "Sousse": ["Sousse", "Sahloul", "Hergla", "Khezama", "Chott Meriam", "Hammam Sousse", "Akouda", "Kala Seghira", "El Kantaoui"],
+    "Tunis": ["Le Bardo", "Sidi Bou Said", "Aouina", "Manar", "Lafayette Centre Ville", "Gammarth", "La Goulette", "Ain Zaghouan", "Les Berges Du Lac", "Mutuelleville"],
+    "Zaghouan": ["Zaghouan"]
+  };
+
+  const stateSelect = document.getElementById("state");
+  const emplacementSelect = document.getElementById("emplacement");
+
+  // Populate state dropdown
+  Object.keys(stateEmplacementData).forEach(state => {
+    const option = document.createElement("option");
+    option.value = state;
+    option.textContent = state;
+    stateSelect.appendChild(option);
+  });
+
+  // Populate emplacement based on state
+  stateSelect.addEventListener("change", () => {
+    const selectedState = stateSelect.value;
+    emplacementSelect.innerHTML = '<option value="">-- Sélectionnez un emplacement --</option>';
+    if (stateEmplacementData[selectedState]) {
+      stateEmplacementData[selectedState].forEach(emp => {
+        const option = document.createElement("option");
+        option.value = emp;
+        option.textContent = emp;
+        emplacementSelect.appendChild(option);
+      });
+    }
+  });
+
+  // CSRF token helper
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
+  // Form submit logic
+  document.getElementById("predictForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const payload = {};
+    formData.forEach((value, key) => payload[key] = value);
+
+    const csrftoken = getCookie('csrftoken');
+    const response = await fetch("http://127.0.0.1:8000/api/landPrice/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const resultDiv = document.getElementById("result");
+    const result = await response.json();
+
+    if (response.ok) {
+      resultDiv.className = "alert alert-success mt-4 text-center";
+      resultDiv.innerHTML = `💰 <strong>Estimated Land Price:</strong> ${result.predicted_price} DT`;
+      resultDiv.style.display = "block";
+
+      // Store all form data + prediction
+      const dataWithPrice = { ...payload, predicted_price: result.predicted_price };
+      localStorage.setItem("prediction_data", JSON.stringify(dataWithPrice));
+
+      document.getElementById("downloadBtnContainer").classList.remove("d-none");
+    } else {
+      resultDiv.className = "alert alert-danger mt-4 text-center";
+      resultDiv.innerText = `❌ Error: ${result.error}`;
+      resultDiv.style.display = "block";
+      document.getElementById("downloadBtnContainer").classList.add("d-none");
+    }
+  });
+
+// PDF generation logic
+// PDF generation logic
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    const data = JSON.parse(localStorage.getItem("prediction_data"));
+    if (data) {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.setFontSize(16);
+        doc.setFont("helvetica", "bold");  // Mettre la police en gras
+        doc.text("Rapport d'estimation du prix du terrain", 20, 20);  // Texte en gras
+
+        doc.setFontSize(12);
+
+        let y = 40;
+        // Filter out the csrfmiddlewaretoken field
+        Object.entries(data).forEach(([key, value]) => {
+            if (key !== "csrfmiddlewaretoken") {
+                const formattedKey = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                const line = `${formattedKey}: ${value}`;
+
+                // Add emojis for better UX
+                if (key === "Surface") {
+                    doc.text(`${line}`, 20, y);  // Surface: 📐 809
+                } else if (key === "State") {
+                    doc.text(`${line}`, 20, y);  // State: 🏙️ Ben Arous
+                } else if (key === "Emplacement") {
+                    doc.text(` ${line}`, 20, y);  // Emplacement: 📍 Boumhel Bassatine
+                } else if (key === "Predicted Price") {
+                    doc.text(` ${line}`, 20, y);  // Predicted Price: 💰 673220.4
+                } else {
+                    doc.text(line, 20, y);  // Other fields
+                }
+                y += 10;
+            }
+        });
+
+        doc.save("estimation_terrain.pdf");
+    }
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+    
   
 
   
