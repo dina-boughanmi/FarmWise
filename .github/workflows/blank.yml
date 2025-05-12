@@ -1,0 +1,35 @@
+# Continuous Integration Workflow for Django (No DB)
+
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ "dina-boughanmi" ]
+  pull_request:
+    branches: [ "dina-boughanmi" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      DJANGO_SETTINGS_MODULE: farmwise.settings
+      PYTHONUNBUFFERED: 1
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.10
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Django tests
+        run: python manage.py test
