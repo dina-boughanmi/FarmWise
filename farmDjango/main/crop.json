@@ -1,0 +1,44 @@
+[
+    {
+        "Specific Crop": "Corn",
+        "Crop N": 142,
+        "Crop P": 61,
+        "Crop K": 34,
+        "Root Depth (cm)": 70
+    },
+    {
+        "Specific Crop": "Olive",
+        "Crop N": 146,
+        "Crop P": 70,
+        "Crop K": 40,
+        "Root Depth (cm)": 80
+    },
+    {
+        "Specific Crop": "Tomato",
+        "Crop N": 142,
+        "Crop P": 33,
+        "Crop K": 22,
+        "Root Depth (cm)": 45
+    },
+    {
+        "Specific Crop": "Potato",
+        "Crop N": 61,
+        "Crop P": 62,
+        "Crop K": 21,
+        "Root Depth (cm)": 50
+    },
+    {
+        "Specific Crop": "Barley",
+        "Crop N": 127,
+        "Crop P": 39,
+        "Crop K": 57,
+        "Root Depth (cm)": 55
+    },
+    {
+        "Specific Crop": "Wheat",
+        "Crop N": 41,
+        "Crop P": 73,
+        "Crop K": 79,
+        "Root Depth (cm)": 60
+    }
+]

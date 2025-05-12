@@ -1,0 +1,150 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+<!doctype html>
+
+<html class="no-js" lang="zxx">
+{% block content %}
+
+ <!--==============================
+    about Area
+    ==============================-->
+
+    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">About Us</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-layout1 space-top">
+        <div class="container">
+            <div class="row gx-5 justify-content-end">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="{% static 'main/img/about/about-1-1.jpg' %}" alt="about-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                            <span class="sec-subtitle">Welcome to AgroNexus</span>
+                            <h2 class="sec-title">Innovating Agriculture for a Sustainable Future
+                            </h2>
+                        </div>
+                        <p class="about-text">At AgroNexus, we are dedicated to revolutionizing agriculture in Tunisia. We provide advanced solutions and insights into crop management, sustainable farming practices, and organic products. Our platform is designed to help farmers make informed decisions through our services, including fertilizer dosage recommendations, crop disease identification, yield prediction, land price insights, volunteer plant identification, and crop rotation planning.
+
+                            Join us in making agriculture smarter, greener, and more efficient for a better tomorrow.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-12 col-md-12">
+                    <div class="about-bottom">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="item-img">
+                                    <img src="{% static 'main/img/about/about-1-2.jpg' %}" alt="about img">
+                                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="about-style1 border1">
+                                    <div class="about-inner">
+                                        <div class="about-icon"><img src="{% static 'main/img/icon/about-icon-1-1.png' %}" alt="icon"></div>
+                                        <h3 class="about-title"><a href="service-details.html">100% Sustainable & Organic Agriculture</a></h3>
+                                        <p class="about-text">At AgroNexus, we are committed to promoting sustainable farming practices by providing 100% organic agricultural solutions, ensuring better yields and healthier crops for a sustainable future.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="about-style1">
+                                    <div class="about-inner">
+                                        <div class="about-icon"><img src="{% static 'main/img/icon/about-icon-1-2.png' %}" alt="icon"></div>
+                                        <h3 class="about-title"><a href="service-details.html">Precision Fertilizer Recommendations</a></h3>
+                                        <p class="about-text">Our AI-driven technology optimizes fertilizer usage to ensure that crops get the nutrients they need, reducing waste and increasing farm productivity, all while protecting the environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="shape-mockup moving z-index-n1 d-none d-lg-block" style="right: 9%; bottom: 22%;">
+            <img src="{% static 'main/img/shep/about-shep-1.png' %}" alt="shapes">
+        </div>
+        <div class="border-shep text-center">
+            <img src="{% static 'main/img/shep/history-border.png' %}" alt="shep">
+        </div>
+        
+    </section>
+
+    <section class="provide-layout1 space py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-12">
+                    <div class="provide-style1">
+                        <div class="title-area wow fadeInUp wow-animated text-center" data-wow-delay="0.3s">
+                            <span class="sec-subtitle">Welcome to AgroNexus</span>
+                            <h2 class="sec-title">What We Provide</h2>
+                        </div>
+                        <div class="row g-5 text-center">
+                            <div class="col-lg-6 d-flex flex-column justify-content-between">
+                                <div class="provide-item mb-4">
+                                    <div class="provide-icon">
+                                        <i class="bi bi-speedometer2" style="font-size: 2rem;"></i> <!-- Performance Icon -->
+                                    </div>
+                                    <div class="provide-content">
+                                        <h2 class="title h6">Fast Results</h2>
+                                        <p class="text">We deliver quick, real-time results for all your agricultural needs.</p>
+                                    </div>
+                                </div>
+                                <div class="provide-item mb-4">
+                                    <div class="provide-icon">
+                                        <i class="bi bi-box" style="font-size: 2rem;"></i> <!-- Scalability Icon -->
+                                    </div>
+                                    <div class="provide-content">
+                                        <h2 class="title h6">Scalable Solutions</h2>
+                                        <p class="text">Our system adapts to increased workloads with ease, ensuring long-term growth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex flex-column justify-content-between">
+                                <div class="provide-item mb-4">
+                                    <div class="provide-icon">
+                                        <i class="bi bi-laptop" style="font-size: 2rem;"></i> <!-- Compatibility Icon -->
+                                    </div>
+                                    <div class="provide-content">
+                                        <h2 class="title h6">Cross-Platform Compatibility</h2>
+                                        <p class="text">Our platform works seamlessly across various devices and operating systems.</p>
+                                    </div>
+                                </div>
+                                <div class="provide-item mb-4">
+                                    <div class="provide-icon">
+                                        <i class="bi bi-shield-lock" style="font-size: 2rem;"></i> <!-- Reliability Icon -->
+                                    </div>
+                                    <div class="provide-content">
+                                        <h2 class="title h6">Reliable Performance</h2>
+                                        <p class="text">We ensure consistent uptime and critical failure minimization for smooth operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,359 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+  body {
+    background-color: #fdfcf5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 1000px;
+    border: 3px solid #375d4c;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    padding: 20px;
+  }
+
+  .card-header img {
+    max-width: 140px;
+  }
+
+  .form-group {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-group .input-group-text {
+    background-color: #fff8e1;
+    border: 1px solid #ced4da;
+    border-right: none;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-group .form-control {
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    font-size: 0.95rem;
+    flex-grow: 1;
+  }
+
+  .input-group .btn {
+    border-left: none;
+    height: 45px;
+  }
+
+  .btn-warning {
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-warning:hover {
+    background-color: #d4ac0d;
+    border-color: #d4ac0d;
+  }
+
+  .plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+ /* Plan Card Background Color */
+.plan-card {
+  background-color: #255308a1;
+  border: 2px solid #375d4c;
+  border-radius: 16px;
+  padding: 20px;
+  width: 22%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.619);
+  text-align: center;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+  background-color: #f4f9f4;  /* Light background to make the plan cards look fresh */
+}
+
+.plan-card.selected {
+  background-color: #279c4262;  /* Light blue background for selected state */
+  border-color: #00796b;      /* Darker border when selected */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow for emphasis */
+}
+
+.plan-card:hover {
+  transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #fefefe, #f4fff6);
+  border-color: #2e7d32;
+}
+
+.plan-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2e7d32;
+  transition: color 0.3s ease;
+}
+
+.plan-card.selected .plan-title {
+  color: #004d40;  /* Darker color for title when selected */
+}
+
+.plan-price { 
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2e6f1c;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.plan-card.selected .plan-price {
+  color: #30a14a;  /* Darker price color for selected state */
+}
+
+.select-plan label {
+  font-weight: bold;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.plan-card.selected .select-plan label {
+  color: #307935;  /* Highlight label when selected */
+}
+
+
+
+</style>
+
+<div class="container login-wrapper">
+  <div class="card login-card">
+    <div class="card-header text-center bg-white border-0">
+      <img src="{% static 'main/img/PINE--FOREST.png' %}" alt="AgroNexus Logo" class="mb-3" style="max-width: 150px;">
+      <h4 class="mb-0 text-dark fw-bold">Sign Up</h4>
+      <small class="text-muted">Create your AgroNexus account</small>
+      <small class="text-muted d-block mb-2">Premium AI-powered platform for farmers & investors</small>
+    </div>
+
+    <div class="card-body px-4">
+      {% if messages %}
+      <div class="mb-3">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <form method="POST" action="{% url 'signup' %}">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Choose a username" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password1">Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" id="password1" name="password1" placeholder="Create a password" required>
+            <button class="btn btn-outline-secondary toggle-password" type="button" data-target="#password1">
+              <i class="fas fa-eye-slash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="Repeat your password" required>
+            <button class="btn btn-outline-secondary toggle-password" type="button" data-target="#password2">
+              <i class="fas fa-eye-slash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="fw-semibold">Choose Your Subscription Plan</label>
+          <div class="plans-container">
+            <!-- Plan Cards (as in original) -->
+            <!-- Trial Pack -->
+            <div class="plan-card">
+              <div class="plan-title">Trial Pack</div>
+              <div class="plan-price">30 TND</div>
+              <div class="plan-feature">✔️ Custom Domain</div>
+              <div class="plan-feature">✔️ SEO</div>
+              <div class="plan-feature">❌ Email</div>
+              <div class="plan-feature">❌ Live Chat</div>
+              <div class="plan-feature">❌ Forum</div>
+              <div class="plan-feature">❌ Unlimited Use</div>
+              <div class="select-plan">
+                <input type="radio" name="plan" value="Trial Pack" required>
+
+                
+              </div>
+            </div>
+
+            <!-- Standard Pro -->
+            <div class="plan-card">
+              <div class="plan-title">Standard Pro</div>
+              <div class="plan-price">70 TND</div>
+              <div class="plan-feature">✔️ Custom Domain</div>
+              <div class="plan-feature">✔️ SEO</div>
+              <div class="plan-feature">✔️ Email</div>
+              <div class="plan-feature">❌ Live Chat</div>
+              <div class="plan-feature">❌ Forum</div>
+              <div class="plan-feature">❌ Unlimited Use</div>
+              <div class="select-plan">
+                <input type="radio" name="plan" value="Standard Pro">
+              </div>
+            </div>
+
+            <!-- Expert Farm -->
+            <div class="plan-card">
+              <div class="plan-title">Expert Farm</div>
+              <div class="plan-price">150 TND</div>
+              <div class="plan-feature">✔️ Custom Domain</div>
+              <div class="plan-feature">✔️ SEO</div>
+              <div class="plan-feature">✔️ Email</div>
+              <div class="plan-feature">✔️ Live Chat</div>
+              <div class="plan-feature">✔️ Forum</div>
+              <div class="plan-feature">❌ Unlimited Use</div>
+              <div class="select-plan">
+                <input type="radio" name="plan" value="Expert Farm">
+              </div>
+            </div>
+
+            <!-- Investor / SMEs -->
+            <div class="plan-card">
+              <div class="plan-title">Investor / SMEs</div>
+              <div class="plan-price">300 TND</div>
+              <div class="plan-feature">✔️ Custom Domain</div>
+              <div class="plan-feature">✔️ SEO</div>
+              <div class="plan-feature">✔️ Email</div>
+              <div class="plan-feature">✔️ Live Chat</div>
+              <div class="plan-feature">✔️ Forum</div>
+              <div class="plan-feature">✔️ Unlimited Use</div>
+              <div class="select-plan">
+                <input type="radio" name="plan" value="Investor/SMEs">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-warning w-100">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".plan-card"), {
+    max: 10,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.toggle-password').forEach(button => {
+    button.addEventListener('click', function () {
+      const input = document.querySelector(this.dataset.target);
+      const icon = this.querySelector('i');
+
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      } else {
+        input.type = 'password';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.plan-card').forEach(card => {
+    card.addEventListener('click', function () {
+      // Remove the 'selected' class from all cards
+      document.querySelectorAll('.plan-card').forEach(plan => plan.classList.remove('selected'));
+      
+      // Add 'selected' class to the clicked card
+      this.classList.add('selected');
+
+      // Check the radio button inside the clicked card
+      const radioButton = this.querySelector('input[type="radio"][name="plan"]');
+      if (radioButton) {
+        radioButton.checked = true;
+      }
+    });
+  });
+
+  // Ensure a plan is selected before form submission
+  document.querySelector('form').addEventListener('submit', function (event) {
+    const selectedRadioButton = document.querySelector('input[name="plan"]:checked');
+    
+    if (!selectedRadioButton) {
+      event.preventDefault();
+      alert('Please select a subscription plan before proceeding.');
+    }
+  });
+</script>
+
+{% endblock %}

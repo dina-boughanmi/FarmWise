@@ -1,0 +1,137 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<!--==============================
+    Breadcumb
+    ============================== -->
+    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Land Price Estimation</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li>Land Price Estimation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--==============================
+			land price Area
+	==============================-->
+
+    <section class="land-price-form-section py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">💰 Land Price Estimator</h2>
+            <p class="text-muted fs-5">Fill in the land details to estimate its market value accurately.</p>
+          </div>
+          <div class="form-card mx-auto p-5 shadow-lg">
+            <form>
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">📐 Surface (m²)</label>
+                  <input type="number" class="form-control fancy-input" placeholder="Enter land surface" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">📌 Emplacement</label>
+                  <input type="text" class="form-control fancy-input" placeholder="e.g., Urban, Rural" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🏞️ State</label>
+                  <input type="text" class="form-control fancy-input" placeholder="Enter State" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🗺️ LNDF</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter LNDF" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">📊 CLAF</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter CLAF" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🌊 Drain</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Drainage Capacity" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🧱 PSCL</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter PSCL" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">💧 TAWC</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter TAWC" />
+                </div>
+      
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold">🧪 PHAQ</label>
+                  <input type="number" step="0.1" class="form-control fancy-input" placeholder="Enter PHAQ" />
+                </div>
+              </div>
+      
+              <div class="text-center mt-5">
+                <button type="submit" class="btn btn-success px-5 py-2 fs-5 fw-semibold shadow-sm">💡 Estimate Price</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .fertilizer-form-section {
+          background: #f9f9f9;
+        }
+        
+        .form-card {
+          background: rgba(255, 255, 255, 0.85);
+          border-radius: 25px;
+          max-width: 960px;
+          animation: slideUp 0.6s ease-out;
+        }
+        
+        .fancy-input {
+          border-radius: 10px;
+          padding: 10px 15px;
+          border: 1px solid #ccc;
+          transition: 0.3s ease;
+          font-size: 1rem;
+        }
+        
+        .fancy-input:focus {
+          border-color: #198754;
+          box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+        }
+        
+        .form-label {
+          margin-bottom: 8px;
+          font-size: 0.95rem;
+          color: #333;
+        }
+        
+        @keyframes slideUp {
+          from {
+            transform: translateY(40px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        </style>
+        
+  
+
+  
+
+{% endblock %}
