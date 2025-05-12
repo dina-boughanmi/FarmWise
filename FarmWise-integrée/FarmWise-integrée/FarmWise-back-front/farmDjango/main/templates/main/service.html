@@ -1,0 +1,156 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+ <!--==============================
+    Breadcumb
+    ============================== -->
+    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Our Services</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li>Our Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--==============================
+			services Area
+	==============================-->
+
+
+
+    <section class="services-section py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="sec-title display-5 fw-bold text-dark">🌾 Smart Agriculture Services</h2>
+            <p class="text-muted fs-5">Tap into AI-powered tools to boost your farming game.</p>
+          </div>
+          <div class="row g-4 text-center">
+            <!-- Service Card -->
+            <div class="col-md-4 d-flex" data-fade>
+              <a href="{% url 'fertilizer' %}" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-droplet-half"></i></div>
+                <h5>Fertilizer Dosage</h5>
+                <p>Optimize fertilizer usage for your crop and soil.</p>
+              </a>
+            </div>
+      
+            <div class="col-md-4 d-flex" data-fade>
+                <a href="{% url 'yield' %}" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-graph-up-arrow"></i></div>
+                <h5>Crop Yield Prediction</h5>
+                <p>Estimate your field’s output and plan better.</p>
+              </a>
+            </div>
+      
+            <div class="col-md-4 d-flex" data-fade>
+                <a href="{% url 'landPrice' %}" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-currency-dollar"></i></div>
+                <h5>Land Price Estimation</h5>
+                <p>Know the market value of your agricultural land.</p>
+              </a>
+            </div>
+      
+            <div class="col-md-4 d-flex" data-fade>
+                <a href="{% url 'disease' %}" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-bug"></i></div>
+                <h5>Disease Detection</h5>
+                <p>Identify crop diseases using images.</p>
+              </a>
+            </div>
+      
+            <div class="col-md-4 d-flex" data-fade>
+                <a href="{% url 'voluntary' %}" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-search"></i></div>
+                <h5>Volunteer Plant ID</h5>
+                <p>Spot and classify unwanted plants easily.</p>
+              </a>
+            </div>
+      
+            <div class="col-md-4 d-flex" data-fade>
+                <a href="/crop-rotation/" class="service-card w-100">
+                <div class="icon-wrapper"><i class="bi bi-repeat"></i></div>
+                <h5>Crop Rotation Planner</h5>
+                <p>Maintain soil health with smart rotations.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <style>/* Glassy Card Styling */
+        .service-card {
+          background: rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+          padding: 2rem;
+          border-radius: 20px;
+          transition: all 0.4s ease;
+          display: flex;
+          text-decoration: none;
+          color: #333;
+          flex-direction: column;
+  justify-content: center;
+        }
+        .service-card:hover {
+          transform: translateY(-10px) scale(1.03);
+          box-shadow: 0 20px 40px rgba(0, 128, 0, 0.3);
+        }
+        
+        /* Icon Styling */
+        .icon-wrapper {
+          font-size: 2.8rem;
+          color: #2e7d32;
+          margin-bottom: 1rem;
+          transition: transform 0.4s ease, color 0.4s ease;
+        }
+        .service-card:hover .icon-wrapper {
+          transform: rotate(10deg) scale(1.2);
+          color: #1b5e20;
+        }
+        
+        /* Fade Animation */
+        [data-fade] {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: all 0.8s ease-out;
+        }
+        [data-fade].fade-in {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        </style>
+
+
+
+<script>
+    const fadeEls = document.querySelectorAll("[data-fade]");
+  
+    const fadeInOnScroll = () => {
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          el.classList.add("fade-in");
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", fadeInOnScroll);
+    window.addEventListener("load", fadeInOnScroll);
+  </script>
+  
+
+
+
+  
+
+{% endblock %}
