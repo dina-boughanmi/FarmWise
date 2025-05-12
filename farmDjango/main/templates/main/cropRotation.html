@@ -1,0 +1,445 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--==============================
+    Breadcumb
+    ============================== -->
+<div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+    <div class="container z-index-common">
+        <div class="breadcumb-content">
+            <h1 class="breadcumb-title">Crop Rotation Planner</h1>
+        </div>
+        <div class="breadcumb-menu-wrap">
+            <ul class="breadcumb-menu">
+                <li><a href="index-2.html">Home</a></li>
+                <li>Crop Rotation Planner</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--==============================
+			Crop Rotation Area
+	==============================-->
+
+
+<section class="Crop-Rotation-form-section py-5">
+    <div style="padding-top: 20px; padding-bottom:20px" class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">🚜 Plan Your Next Crop</h2>
+            <p class="text-muted fs-5">Start planning smarter: Fill in your crop history to receive a rotation
+                roadmap for your next three plantings</p>
+        </div>
+        <div id="form-section" class="form-card mx-auto p-5 shadow-lg">
+            <form id="cropForm">
+                <!-- Step Tracker -->
+                <div class="step-tracker">
+                    <div id="step1" class="step active" onclick="goToStep(1)">🌱 Oldest Crop</div>
+                    <div id="step2" class="step" onclick="goToStep(2)">🌱 Middle Crop</div>
+                    <div id="step3" class="step" onclick="goToStep(3)">🌱 Previous Crop</div>
+                    <div id="step4" class="step" onclick="goToStep(4)">🌱 Current Crop</div>
+                </div>
+
+                <div class="form-step" id="step1-form">
+                    <label for="crop1">What did you plant 3 crops ago?</label>
+                    <select id="crop1" name="crop1" onchange="nextStep(2)">
+                        <option value="">Select Crop</option>
+                        {% for crop in crop1_list %}
+                        <option value="{{ crop|escape }}">{{ crop }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-step" id="step2-form">
+                    <label for="crop2">What was the second crop in your sequence?</label>
+                    <select id="crop2" name="crop2" onchange="nextStep(3)">
+                        <option value="">Select Crop</option>
+                        {% for crop in crop2_list %}
+                        <option value="{{ crop|escape }}">{{ crop }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-step" id="step3-form">
+                    <label for="crop3">What did you plant most recently?</label>
+                    <select id="crop3" name="crop3" onchange="nextStep(4)">
+                        <option value="">Select Crop</option>
+                        {% for crop in crop3_list %}
+                        <option value="{{ crop|escape }}">{{ crop }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-step" id="step4-form">
+                    <label for="crop4">What’s currently growing in your field?</label>
+                    <select id="crop4" name="crop4">
+                        <option value="">Select Crop</option>
+                        {% for crop in current_crop_list %}
+                        <option value="{{ crop|escape }}">{{ crop }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Final Submit Button -->
+                <div id="submitSection" style="display: none;">
+                    <button type="button" onclick="planNextCrops()">Get your plan</button>
+                </div>
+            </form>
+        </div>
+        <div id="resultSection" style="display: none; text-align: center;">
+            <h3>🌾 Your Recommended Next Crops</h3>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div id="crop-result1" class="crop-result" style="margin-right: 10px;"></div>
+
+                <div id="arrows" style="display: flex; justify-content: center; margin-top: 10px;">
+                    <span style="cursor: pointer; padding-bottom:10px">&#8594;</span>
+                </div>
+
+                <div id="crop-result2" class="crop-result" style="margin-right: 10px;"></div>
+
+                <div id="arrows" style="display: flex; justify-content: center; margin-top: 10px;">
+                    <span style="cursor: pointer;padding-bottom:10px">&#8594;</span>
+                </div>
+
+                <div id="crop-result3" class="crop-result"></div>
+            </div>
+
+            <button onclick="resetForm()">Plan Again</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Global Form Styles */
+    .Crop-Rotation-form-section {
+        background: #f9f9f9;
+    }
+
+    .form-card {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 25px;
+        max-width: 960px;
+        animation: slideUp 0.6s ease-out;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .fancy-input {
+        border-radius: 10px;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        transition: 0.3s ease;
+        font-size: 1rem;
+    }
+
+    .fancy-input:focus {
+        border-color: #198754;
+        box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+    }
+
+    .form-label {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        color: #333;
+    }
+
+    /* Step Tracker Styles */
+    .step-tracker {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .step {
+        padding: 12px 24px;
+        border-radius: 25px;
+        background-color: #ddd;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.1rem;
+        /* Increased font size */
+        display: flex;
+        /* For centering */
+        align-items: center;
+        /* Vertically center */
+        justify-content: center;
+        /* Horizontally center */
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .step.active {
+        background-color: #198754;
+        color: white;
+    }
+
+    .step:hover {
+        background-color: #198754;
+        color: white;
+    }
+
+    .step:active {
+        background-color: #0c6f3f;
+    }
+
+    /* Form Step Display */
+    .form-step {
+        display: none;
+    }
+
+    .form-step label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    select {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    select:focus {
+        outline: none;
+        border-color: #198754;
+    }
+
+    button {
+        margin: 15px auto 0 auto;
+        padding: 15px 50px;
+        background-color: #198754;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    button:hover {
+        background-color: #0c6f3f;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    /* Smooth fade for result section */
+    #resultSection {
+        animation: fadeIn 0.5s ease-in-out;
+        background-color: #ffffffcc;
+        padding: 40px;
+        border-radius: 25px;
+        max-width: 1000px;
+        margin: 0 auto;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    #resultSection h3 {
+        font-size: 2rem;
+        color: #198754;
+        margin-bottom: 20px;
+    }
+
+    /* Reuse button styles for Plan Again */
+    #resultSection button {
+        background-color: #198754;
+        color: white;
+        padding: 12px 30px;
+        margin-top: 20px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #resultSection button:hover {
+        background-color: #0c6f3f;
+    }
+
+    .crop-result {
+        padding: 12px 24px;
+        border-radius: 25px;
+        background-color: #ddd;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.3rem;
+        /* Increased font size */
+        display: inline-flex;
+        /* Makes the div shrink to fit content */
+        align-items: center;
+        /* Vertically center */
+        justify-content: center;
+        /* Horizontally center */
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+        margin: 0 10px;
+        white-space: nowrap;
+    }
+
+
+    .crop-result :hover {
+        transform: scale(1.05);
+        background-color: #198754;
+    }
+
+    #arrows span {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+        color: #198754;
+    }
+
+    /* Animation for Form */
+    @keyframes slideUp {
+        from {
+            transform: translateY(40px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+{% endblock %}
+
+
+
+{% block java%}
+<script>
+    function getCSRFToken() {
+        const cookieValue = document.cookie.match('(^|;)\\s*csrftoken\\s*=\\s*([^;]+)');
+        return cookieValue ? cookieValue.pop() : '';
+    }
+    // Function to show the next step and highlight the corresponding tracker
+    function nextStep(stepNumber) {
+        const currentStep = stepNumber - 1;
+        const nextStep = stepNumber;
+
+        // Hide the current step form
+        document.getElementById(`step${currentStep}-form`).style.display = 'none';
+
+        // Show the next step form
+        document.getElementById(`step${nextStep}-form`).style.display = 'block';
+
+        // Highlight the corresponding step tracker
+        document.getElementById(`step${currentStep}`).classList.remove('active');
+        document.getElementById(`step${nextStep}`).classList.add('active');
+
+        // Show the submit section when reaching the last step
+        if (nextStep === 4) {
+            document.getElementById("submitSection").style.display = "block";
+        }
+    }
+
+    // Function to jump to a specific step when clicking on the step tracker
+    function goToStep(stepNumber) {
+        const activeStep = document.querySelector('.step.active');
+        const currentStepIndex = parseInt(activeStep.id.replace('step', ''));
+
+        // Hide the current form and display the chosen form
+        document.getElementById(`step${currentStepIndex}-form`).style.display = 'none';
+        document.getElementById(`step${stepNumber}-form`).style.display = 'block';
+
+        // Update the step tracker highlights
+        document.getElementById(`step${currentStepIndex}`).classList.remove('active');
+        document.getElementById(`step${stepNumber}`).classList.add('active');
+    }
+
+    // Final submit function for planning the next three crops
+    function planNextCrops() {
+        const data = {
+            crop1: document.getElementById('crop1').value,
+            crop2: document.getElementById('crop2').value,
+            crop3: document.getElementById('crop3').value,
+            crop4: document.getElementById('crop4').value,
+        };
+
+        fetch('/cropRotation/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCSRFToken(),
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    // Hide the form and show the result section
+                    document.getElementById("form-section").style.display = "none";
+                    document.getElementById("resultSection").style.display = "block";
+
+                    // Display prediction results
+                    const divIds = ["crop-result1", "crop-result2", "crop-result3"];  // List of div IDs
+
+                    // Clear previous content (optional)
+                    divIds.forEach(id => {
+                        const div = document.getElementById(id);
+                        if (div) {
+                            div.innerHTML = '';  // Clear the div's content
+                        }
+                    });
+
+                    // Loop through the crop sequence and update the corresponding divs
+                    result.crop_sequence.forEach((crop, index) => {
+                        const div = document.getElementById(divIds[index]);  // Get the div by ID
+                        if (div) {
+                            div.textContent = `🌱 ${crop}`;  // Update the content of the div
+                        }
+                    });
+                } else {
+                    alert("Something went wrong: " + result.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("An error occurred. Please try again.");
+            });
+    }
+
+    function resetForm() {
+        // Reset form fields
+        document.getElementById("cropForm").reset();
+
+        // Reset form steps
+        const steps = document.querySelectorAll('.form-step');
+        steps.forEach(step => step.style.display = 'none');
+        document.getElementById("step1-form").style.display = "block";
+
+        // Reset step tracker
+        document.querySelectorAll('.step').forEach(step => step.classList.remove('active'));
+        document.getElementById("step1").classList.add('active');
+
+        // Show form, hide results
+        document.getElementById("cropForm").style.display = "block";
+        document.getElementById("submitSection").style.display = "none";
+        document.getElementById("resultSection").style.display = "none";
+    }
+
+    // Initialize the form
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("step1-form").style.display = "block";
+    });
+
+</script>
+<script src="{% static 'main/js/vendor/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'main/js/slick.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'main/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'main/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'main/js/main.js' %}"></script>
+{% endblock %}
