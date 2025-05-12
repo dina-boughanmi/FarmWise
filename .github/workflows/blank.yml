@@ -4,14 +4,14 @@ name: Continuous Integration
 
 on:
   push:
-    branches: [ "dina-boughanmi" ]
+    branches: [ "dina-boughanmi-cicd" ]
   pull_request:
-    branches: [ "dina-boughanmi" ]
+    branches: [ "dina-boughanmi-cicd" ]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     env:
       DJANGO_SETTINGS_MODULE: farmwise.settings
