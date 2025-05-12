@@ -2,7 +2,7 @@
 from django.urls import path
 from . import views
 from . import auth_views  # import your new auth file
-
+from .views import PredictPrice,land_view  # Importer correctement la vue
 
 
 urlpatterns = [
@@ -13,9 +13,11 @@ urlpatterns = [
     path('contact/', views.contact_view, name='contact'), 
     path('service/', views.services_view, name='service'), 
     # path('fertilizer/', views.fertilizer_view, name='fertilizer'), 
-    path('landPrice/', views.land_view, name='landPrice'), 
+    path('landPrice/', views.land_view, name='landPrice'),         # Affichage HTML
+    path('api/landPrice/', PredictPrice.as_view(), name='predict_land_price'),  # API de p
     path('yield/', views.yield_view, name='yield'), 
-    path('disease/', views.disease_view, name='disease'), 
+    path('disease/', views.disease_view, name='disease'),
+    path('cropRotation/', views.cropRotation_view, name='cropRotation'), 
     path('voluntary/', views.voluntary_view, name='voluntary'), 
     path('predict/', views.predict_view, name='fertilizer'),    # new form URL
     path('download-pdf/', views.download_pdf, name='download_pdf'),
