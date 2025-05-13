@@ -1,0 +1,1234 @@
+[
+    {
+        "Fertilizer Name": "BIOFERT ORGANIC",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FLOCROP B",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "FERTIMAX 15-15-15",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "MOLYBDENUM PLUS",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "MAP 11-52-0",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Soil Application",
+        "N (%)": 11,
+        "P (%)": 15,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "Nutriplusorganic 4-3-3",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 3,
+        "K (%)": 3
+    },
+    {
+        "Fertilizer Name": "NUTRIJISA ECOCAL",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "FULVOMAX",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "BOTAMISOL PRO 80",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "AGROGOLD 20-20-20",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Foliar",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "FUSVICUR",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Foliar",
+        "N (%)": 5,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ORGAFLOW",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 18,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "TRADEBOR",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "GREEN FORGE",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ALGADUL",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "DCM VIVIKALI",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Soil Application",
+        "N (%)": 5,
+        "P (%)": 5,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "IRON CHELATE 6%",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ECORMON",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ORGANIC PLUS 3-2-2",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 2,
+        "K (%)": 2
+    },
+    {
+        "Fertilizer Name": "PERFECTOSE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "Superphosphate",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 4,
+        "P (%)": 15,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "ACM CITRUS",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 5,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "MIX DRIP COMPBI",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "FORCEX ECO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "GLYBET",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 18,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FERTIGRAIN FOLIAR",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "AMINOPLUS ORGANIC",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "Ammonium Nitrate",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "WUXAL AMINO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FULVILAND",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 12
+    },
+    {
+        "Fertilizer Name": "STIMUL NOSSUM SP",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "Potash",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 4,
+        "P (%)": 0,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "IDAI CA SOIL",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 8,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "CALCIUM NITRATE",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "SYNAFER PREMIUM Fe 6% EDDHA",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 5,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "TURBO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "BESTCURE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "Urea",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 18,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "FERTIGRAIN START",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Seed Treatment",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "POTAFERT 0-0-60",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 0,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "ESPARTAN",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 5,
+        "P (%)": 8,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "GOLDEN FER",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 12,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "ACM COBRE",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "CRIPTHUM",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "MOLEX",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "BOMBARDIER SUGAR",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "BIOCALCIUM",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "CALFERT 15-0-0 + 20CaO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "FOLIASTIM mix TE liquide",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "WUXAL ASCOFOL",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ZINCROPLUS",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "MAGNIFERT 10-5-10 + 2MgO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Soil Application",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "VEGETAMIN ECO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ECOFERT 5-3-4",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 5,
+        "P (%)": 3,
+        "K (%)": 4
+    },
+    {
+        "Fertilizer Name": "POTASSIUM NITRATE",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "N-BALANCER",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FOLIARFEED 10-5-5",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "HUMILIG 8-8",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 8,
+        "P (%)": 8,
+        "K (%)": 8
+    },
+    {
+        "Fertilizer Name": "SANBIO EPSOMIT",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "ACM POTASIO GEL",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "TUNIFERT 12-12-17",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 12,
+        "P (%)": 12,
+        "K (%)": 17
+    },
+    {
+        "Fertilizer Name": "IRONMAX 6%",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 5,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ZINC SULFATE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Soil Application",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ACM SEAFORCE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Seed Treatment and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ACM AMINO 12 VEGETAL",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "HUMIFERT LIQUID",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "COPPER SULFATE",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "BASFOLIAR SIZE SL",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "CUPRO ACTIV",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "IDAI K PLUS",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 8,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "BIOZINC",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "BOMBARDIER",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "RHYZO",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 8,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "GROBEL NPK 4-3-3 + 1MgO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 3,
+        "K (%)": 3
+    },
+    {
+        "Fertilizer Name": "MAGNESIUM NITRATE",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM FUL EXTRA",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "SUPER FIFTY",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "CALMAG 10-0-0 + 12CaO + 6MgO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "ALGAMAX ORGANIC",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "TARSSAN MIX",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "NITROPLUS 30-0-0",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "FOLIASTIM B Mo liquide",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "HUMILAND",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 12,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "BIFIDUS",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Micro-irrigation",
+        "N (%)": 12,
+        "P (%)": 10,
+        "K (%)": 12
+    },
+    {
+        "Fertilizer Name": "ULTRAFERRO",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ALGAPOWER",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "PANORAMIX WHEAT",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Seed Treatment",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM AMINO 45 SOLID",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "CAOS XT",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "RAPTOR FE 48",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "AGRIFUL",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ICI",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "VITAMINA MIX",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "MANGANESE SULFATE",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Soil Application",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "TECAMIN MAX",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "NPK 20-20-20",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "FOLIASTIM MN/ZN",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "MAX SEASAILER",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "TRADECORP AZ",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "HOLD plus",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "BLACKJAK",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 18,
+        "P (%)": 12,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "FERROACTIV H48",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "MainstayCalcio",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "FERTICROP ORGANIC PLUS",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 12,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "DAP 18-46-0",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "IDAI BROTAVERD",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "MICROFERT 12-0-0 + 1Zn",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 12,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "SANBIO PLANTA",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "ALGALIV",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM BORO",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Foliar",
+        "N (%)": 12,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "Tradecitrus",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "FULLVIGOR",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 12,
+        "P (%)": 5,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "KALIFERT 0-0-50",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 0,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "BIOCAL",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "ACM MAR 20",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ASCOFILLUM",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "DEFENDER MZ",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM MAR S",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FORCE CYT",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "DEFENDER CALCIO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "ACA 27 ORGANIC",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "TERIOS LIQUIDO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular",
+        "N (%)": 5,
+        "P (%)": 5,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "VIGORAL MOL",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 12,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "BORON PLUS",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "FARINA DI BASALTO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "BLACKFORT",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ICC",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "AMINO Mn/Zn",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "JISAQUEL FE S-6",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 10,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "VITANICA RZ BIO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ALGA-PLEX",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM CALCIO PLUS",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 10,
+        "K (%)": 12
+    },
+    {
+        "Fertilizer Name": "BORKO",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "PHOSFERT 18-46-0",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "HUMILIG 11-5",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular",
+        "N (%)": 11,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "ACM HUMIC",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "HUMILIG 25 PLUS",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "NITROCAL 20-0-0 + 15CaO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "AGRI M40",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular",
+        "N (%)": 16,
+        "P (%)": 10,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "CONTROLPHYT Cu",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 12,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "AMMONIUM SULFATE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Soil Application",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "SULFOMAG 0-0-22 + 11S + 11MgO",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 0,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "PHYLGREEN",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 5,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "BIORADICANTE",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "REZIST",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "ACM HIERRO",
+        "Fertilizer Type": "Liquid",
+        "Application Method": "Radicular",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "IDAI ALGAFER",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "FRUTALIV",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "FORCE SOIL",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Horticulture",
+        "N (%)": 15,
+        "P (%)": 10,
+        "K (%)": 5
+    },
+    {
+        "Fertilizer Name": "UREA 46-0-0",
+        "Fertilizer Type": "Organic",
+        "Application Method": "Soil Application",
+        "N (%)": 18,
+        "P (%)": 0,
+        "K (%)": 0
+    },
+    {
+        "Fertilizer Name": "ECKLOMAR",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Radicular and Foliar",
+        "N (%)": 10,
+        "P (%)": 5,
+        "K (%)": 10
+    },
+    {
+        "Fertilizer Name": "POTASSIUM SULFATE 0-0-50",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Soil Application",
+        "N (%)": 4,
+        "P (%)": 0,
+        "K (%)": 20
+    },
+    {
+        "Fertilizer Name": "AGRIPHYT CONTACT Zn-Mn",
+        "Fertilizer Type": "Chemical",
+        "Application Method": "Foliar",
+        "N (%)": 15,
+        "P (%)": 15,
+        "K (%)": 15
+    },
+    {
+        "Fertilizer Name": "DAP",
+        "Fertilizer Type": "Granular",
+        "Application Method": "Radicular and Soil Application",
+        "N (%)": 18,
+        "P (%)": 15,
+        "K (%)": 0
+    }
+]

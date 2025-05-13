@@ -1,0 +1,175 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<!--==============================
+    Breadcumb
+    ============================== -->
+    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Fertilizer Dosage</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li>Fertilizer Dosage</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--==============================
+			fertilizer Area
+	==============================-->
+
+    <section class="fertilizer-form-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-dark">🧪 Fertilizer Dosage Optimizer</h2>
+                <p class="text-muted fs-5">Fill in the details to calculate the optimal dosage for your crop and soil.</p>
+            </div>
+    
+            <div class="form-card mx-auto p-5 shadow-lg">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">🌱 Fertilizer Name</label>
+                            <select name="Fertilizer Name" class="form-control fancy-input" required>
+                                <option value="" disabled {% if not form_data.Fertilizer_Name %}selected{% endif %}>Select Fertilizer</option>
+                                {% for fertilizer in fertilizer_list %}
+                                    <option value="{{ fertilizer }}" {% if fertilizer == form_data.Fertilizer_Name %}selected{% endif %}>{{ fertilizer }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">📍 State</label>
+                            <select name="State" class="form-control fancy-input" required>
+                                <option value="" disabled {% if not form_data.State %}selected{% endif %}>Select State</option>
+                                {% for state in state_list %}
+                                    <option value="{{ state }}" {% if state == form_data.State %}selected{% endif %}>{{ state }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">🌾 Specific Crop</label>
+                            <select name="Specific Crop" class="form-control fancy-input" required>
+                                <option value="" disabled {% if not form_data.Specific_Crop %}selected{% endif %}>Select Crop</option>
+                                {% for crop in crop_list %}
+                                    <option value="{{ crop }}" {% if crop == form_data.Specific_Crop %}selected{% endif %}>{{ crop }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <label class="form-label fw-semibold">🧪 Soil N</label>
+                            <input type="number" step="0.01" name="Soil_N" class="form-control fancy-input" value="{{ form_data.Soil_N|default:'' }}" required>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <label class="form-label fw-semibold">🧪 Soil P</label>
+                            <input type="number" step="0.01" name="Soil_P" class="form-control fancy-input" value="{{ form_data.Soil_P|default:'' }}" required>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <label class="form-label fw-semibold">🧪 Soil K</label>
+                            <input type="number" step="0.01" name="Soil_K" class="form-control fancy-input" value="{{ form_data.Soil_K|default:'' }}" required>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <label class="form-label fw-semibold">🧫 Soil pH</label>
+                            <input type="number" step="0.01" name="pH" class="form-control fancy-input" value="{{ form_data.pH|default:'' }}" required>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <label class="form-label fw-semibold">💰 Price per kg (TND)</label>
+                            <input type="number" step="0.01" name="Price per kg (TND)" class="form-control fancy-input" value="{{ form_data.Price_per_kg_TND|default:'' }}" required>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <label class="form-label fw-semibold">⚗️ Absorption Rate (%)</label>
+                            <input type="number" step="0.01" name="Absorption Rate (%)" class="form-control fancy-input" value="{{ form_data.Absorption_Rate|default:'' }}" required>
+                        </div>
+                    </div>
+    
+                    <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-success px-5 py-2 fs-5 fw-semibold shadow-sm">🔍 Predict Dosage</button>
+                    </div>
+                </form>
+    
+                {% if prediction %}
+                    <div class="alert alert-success text-center mt-4">
+                        <strong>✅ Predicted Dosage:</strong> {{ prediction }} kg/ha
+                    </div>
+                    <form method="POST" action="{% url 'download_pdf' %}">
+                        {% csrf_token %}
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-outline-primary px-4 py-2">📄 Download PDF Report</button>
+                        </div>
+                    </form>
+                {% endif %}
+    
+                {% if error %}
+                    <div class="alert alert-danger text-center mt-4">
+                        <strong>⚠️ Error:</strong> {{ error }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    
+    
+      
+      <style>
+        .fertilizer-form-section {
+          background: #f9f9f9;
+        }
+      
+        .form-card {
+          background: rgba(255, 255, 255, 0.85);
+          border-radius: 25px;
+          max-width: 960px;
+          animation: slideUp 0.6s ease-out;
+        }
+      
+        .fancy-input {
+          border-radius: 10px;
+          padding: 10px 15px;
+          border: 1px solid #ccc;
+          transition: 0.3s ease;
+          font-size: 1rem;
+        }
+      
+        .fancy-input:focus {
+          border-color: #198754;
+          box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+        }
+      
+        .form-label {
+          margin-bottom: 8px;
+          font-size: 0.95rem;
+          color: #333;
+        }
+      
+        @keyframes slideUp {
+          from {
+            transform: translateY(40px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      </style>
+      
+      
+  
+
+{% endblock %}

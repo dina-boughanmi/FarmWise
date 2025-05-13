@@ -1,0 +1,163 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+  .payment-wrapper {
+    min-height: 100vh;
+    background-color: #fdfcf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .payment-card {
+    max-width: 500px;
+    width: 100%;
+    border: 3px solid #375d4c;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+
+  .payment-card h4 {
+    font-weight: bold;
+    color: #375d4c;
+  }
+
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #2e3c35;
+  }
+
+  .price-tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1c40f;
+    margin-bottom: 20px;
+  }
+
+  .btn-pay {
+    background-color: #f1c40f;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-pay:hover {
+    background-color: #d4ac0d;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+</style>
+
+<div class="payment-wrapper">
+  <div class="payment-card">
+    <div class="text-center">
+      <img src="{% static 'main/img/PINE--FOREST.png' %}" alt="Logo" style="max-width: 120px;">
+      <h4 class="mt-3">Complete Your Subscription</h4>
+    </div>
+
+    <!-- Display success or error messages -->
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.level_tag }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    <div class="text-center">
+      <div class="plan-name">{{ plan }}</div>
+      <div class="price-tag">
+        {% if plan == 'Standard Pro' %}70 TND/month
+        {% elif plan == 'Expert Farm' %}150 TND/month
+        {% elif plan == 'Investor/SMEs' %}300 TND/month
+        {% elif plan == 'Cooperatives' %}From 800 TND/month
+        {% elif plan == 'Trial Pack' %}30 TND/month
+        {% else %}Custom Plan
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Payment Form -->
+    <form action="{% url 'payment' %}" method="post" id="payment-form">
+      {% csrf_token %}
+      <input type="hidden" name="plan" value="{{ plan }}">
+
+      <!-- Stripe Payment Fields -->
+      <div id="payment-request-button"></div>
+
+      <button type="submit" class="btn-pay">Pay Now</button>
+    </form>
+
+    <div class="note">
+      Secure payment powered by AgroNexus. Your subscription helps us build smarter farms.
+    </div>
+  </div>
+</div>
+
+<!-- Include Stripe.js -->
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+  var stripe = Stripe('pk_test_51OqJbyP8fZ7mtZrf3jcyFIrvs7dUiVDNlcghK4u9zLNY8BLLZuc0ezkfc1af19aLSyeCRNbQIhDLAHR9fo2rGIRG00j19Anzg0');
+  var elements = stripe.elements();
+
+  // Create an instance of the card Element
+  var card = elements.create('card');
+  card.mount('#payment-request-button');
+
+  // Handle form submission and create the payment method
+  document.getElementById('payment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    stripe.createToken(card).then(function(result) {
+      if (result.error) {
+        alert(result.error.message);
+      } else {
+        // Insert token into the form
+        var tokenInput = document.createElement('input');
+        tokenInput.type = 'hidden';
+        tokenInput.name = 'stripeToken';
+        tokenInput.value = result.token.id;
+        document.getElementById('payment-form').appendChild(tokenInput);
+
+        // Submit the form
+        document.getElementById('payment-form').submit();
+      }
+    });
+  });
+</script>
+
+{% endblock %}

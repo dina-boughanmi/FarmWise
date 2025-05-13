@@ -1,0 +1,535 @@
+Crop,Etm,Water Requirements,days of water usage,Fertilizer N,Fertilizer K,Fertilizer P,Root Depth,Residue,Disease,Pest,plant spacing,soil salinity,area,Soil_type,Crop (t-2),Crop (t-1),Crop (t),Next Crop
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Sugarbeet,Wheat,Legumes ,Legumes 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Mustard,Maize,Carrot ,Carrot 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Sunflower,Pea,Onion ,Onion 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Maize,Beans,Cabbage,Cabbage
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam,Cabbage,Legumes,Carrot ,Carrot 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam,Cabbage,Legumes,Carrot ,Carrot 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam,Cabbage,Legumes,Carrot ,Carrot 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Mustard,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Mustard,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Mustard,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Sugarbeet,Tomato,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Sugarbeet,Tomato,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Sugarbeet,Tomato,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Maize,Pepper,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Maize,Pepper,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Maize,Pepper,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Wheat,Sunflower,Carrot,Carrot
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Wheat,Sunflower,Carrot,Carrot
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Wheat,Sunflower,Carrot,Carrot
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam,Legumes,Maize,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam,Legumes,Maize,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam,Legumes,Maize,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard,Mustard
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard,Mustard
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard,Mustard
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam,Legumes,Cereal,Maize ,Maize 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Mustard,Sunflower,Wheat ,Wheat 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Carrot,Onion,Cabbage ,Cabbage 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Sugarbeet,Peas,Onion ,Onion 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Tomato,Mustard,Legumes,Legumes
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy,Cereal,Mustard,Sunflower ,Sunflower 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Maize,Legumes,Onion ,Onion 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Tomato,Wheat,Legumes ,Legumes 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Carrot,Cabbage,Sunflower ,Sunflower 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Pea,Onion,Maize,Maize
+Sunflower ,,800,,75,95,32.5,100,3500,,,90,tolerent,,"Deep, well-drained soil with good water holding capacity",Legumes,Cereal,Maize ,Maize 
+Sunflower ,,800,,75,95,32.5,100,3500,,,90,tolerent,,"Deep, well-drained soil with good water holding capacity", Mustard,Sunflower,Wheat ,Wheat 
+Sunflower ,,800,,75,95,32.5,100,3500,,,90,tolerent,,"Deep, well-drained soil with good water holding capacity", Carrot,Onion,Cabbage ,Cabbage 
+Sunflower ,,800,,75,95,32.5,100,3500,,,90,tolerent,,"Deep, well-drained soil with good water holding capacity", Sugarbeet,Peas,Onion ,Onion 
+Sunflower ,,800,,75,95,32.5,100,3500,,,90,tolerent,,"Deep, well-drained soil with good water holding capacity", Tomato,Mustard,Legumes,Legumes
+Bean,,400,75,30,85,50,125,2700,,,15,highly sensitive,,"Friable, well-drained, loamy soils are ideal.",Cereal,Mustard,Sunflower ,Sunflower 
+Bean,,400,75,30,85,50,125,2700,,,15,highly sensitive,,"Friable, well-drained, loamy soils are ideal.", Maize,Legumes,Onion ,Onion 
+Bean,,400,75,30,85,50,125,2700,,,15,highly sensitive,,"Friable, well-drained, loamy soils are ideal.", Tomato,Wheat,Legumes ,Legumes 
+Bean,,400,75,30,85,50,125,2700,,,15,highly sensitive,,"Friable, well-drained, loamy soils are ideal.", Carrot,Cabbage,Sunflower ,Sunflower 
+Bean,,400,75,30,85,50,125,2700,,,15,highly sensitive,,"Friable, well-drained, loamy soils are ideal.", Pea,Onion,Maize,Maize
+Sunflower,5,800,130,75,90,32.5,100,3500,,,90,Moderately Tolerant,Wide,Loamy,Maize,Legumes,Wheat ,Wheat 
+Sunflower,5,800,130,75,90,32.5,100,3500,,,90,Moderately Tolerant,Wide,Loamy,Cabbage,Carrot,Legumes ,Legumes 
+Sunflower,5,800,130,75,90,32.5,100,3500,,,90,Moderately Tolerant,Wide,Loamy, Tomato,Onion,Peas ,Peas 
+Sunflower,5,800,130,75,90,32.5,100,3500,,,90,Moderately Tolerant,Wide,Loamy, Sugarbeet,Pepper,Mustard ,Mustard 
+Sunflower,5,800,130,75,90,32.5,100,3500,,,90,Moderately Tolerant,Wide,Loamy, Wheat,Pea,Cereal,Cereal
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy,Cereal,Mustard,Legumes ,Legumes 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Wheat,Sunflower,Maize ,Maize 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Sugarbeet,Mustard,Legumes ,Legumes 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Maize,Pepper,Onion,Onion
+Bean,4,550,110,40,60,25,120,2700,,,45,Sensitive,Wide,Loamy,Cereal,Mustard,Sunflower ,Sunflower 
+Bean,4,550,110,40,60,25,120,2700,,,45,Sensitive,Wide,Loamy, Maize,Legumes,Onion ,Onion 
+Bean,4,550,110,40,60,25,120,2700,,,45,Sensitive,Wide,Loamy, Tomato,Wheat,Legumes ,Legumes 
+Bean,4,550,110,40,60,25,120,2700,,,45,Sensitive,Wide,Loamy, Carrot,Cabbage,Sunflower ,Sunflower 
+Bean,4,550,110,40,60,25,120,2700,,,45,Sensitive,Wide,Loamy, Pea,Onion,Maize,Maize
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy,Cereal,Mustard,Legumes ,Legumes 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Wheat,Sunflower,Maize ,Maize 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Sugarbeet,Mustard,Legumes ,Legumes 
+Pea,4,500,100,30,50,20,100,2500,Dicotylédones et graminées (pré-levée),Stomp Aqua,50,Sensitive,Wide,Loamy, Maize,Pepper,Onion,Onion
+Sugarbeet,6,700,150,100,120,40,200,4000,,,40,Moderate,Wide,Loamy,Cereal,Legumes,Sunflower ,Sunflower 
+Sugarbeet,6,700,150,100,120,40,200,4000,,,40,Moderate,Wide,Loamy, Maize,Cabbage,Legumes ,Legumes 
+Sugarbeet,6,700,150,100,120,40,200,4000,,,40,Moderate,Wide,Loamy, Tomato,Wheat,Maize ,Maize 
+Sugarbeet,6,700,150,100,120,40,200,4000,,,40,Moderate,Wide,Loamy, Onion,Pea,Carrot ,Carrot 
+Sugarbeet,6,700,150,100,120,40,200,4000,,,40,Moderate,Wide,Loamy, Sunflower,Pepper,Beans,Beans
+Sugarcane,7,1500,365,150,180,60,250,8000,,,120,Moderate,Tropical,Loamy,Legumes,Maize,Cereal ,Cereal 
+Sugarcane,7,1500,365,150,180,60,250,8000,,,120,Moderate,Tropical,Loamy, Wheat,Sunflower,Legumes ,Legumes 
+Sugarcane,7,1500,365,150,180,60,250,8000,,,120,Moderate,Tropical,Loamy, Mustard,Tomato,Onion ,Onion 
+Sugarcane,7,1500,365,150,180,60,250,8000,,,120,Moderate,Tropical,Loamy,Cabbage,Carrot,Peas ,Peas 
+Sugarcane,7,1500,365,150,180,60,250,8000,,,120,Moderate,Tropical,Loamy, Maize,Pepper,Beans,Beans
+Cabbage,5,600,90,80,90,30,50,3000,,,60,Sensitive,Wide,Loamy,Legumes,Onion,Maize ,Maize 
+Cabbage,5,600,90,80,90,30,50,3000,,,60,Sensitive,Wide,Loamy, Wheat,Carrot,Legumes ,Legumes 
+Cabbage,5,600,90,80,90,30,50,3000,,,60,Sensitive,Wide,Loamy, Sunflower,Mustard,Beans ,Beans 
+Cabbage,5,600,90,80,90,30,50,3000,,,60,Sensitive,Wide,Loamy, Sugarbeet,Tomato,Peas ,Peas 
+Cabbage,5,600,90,80,90,30,50,3000,,,60,Sensitive,Wide,Loamy, Maize,Pea,Carrot,Carrot
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam,Cabbage,Legumes,Carrot ,Carrot 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam,Cabbage,Legumes,Carrot ,Carrot 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam,Cabbage,Legumes,Carrot ,Carrot 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam,Cabbage,Legumes,Carrot ,Carrot 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Mustard,Sunflower,Wheat ,Wheat 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Mustard,Sunflower,Wheat ,Wheat 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Mustard,Sunflower,Wheat ,Wheat 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Mustard,Sunflower,Wheat ,Wheat 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Maize,Pepper,Legumes ,Legumes 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Maize,Pepper,Legumes ,Legumes 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Maize,Pepper,Legumes ,Legumes 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Maize,Pepper,Legumes ,Legumes 
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Wheat,Sunflower,Carrot,Carrot
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Wheat,Sunflower,Carrot,Carrot
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones (post-levée),BASAGRAN,30,Moderate,Wide,Sandy Loam, Wheat,Sunflower,Carrot,Carrot
+Onion,4,500,120,60,70,25,40,2000,Dicotylédones et graminées (pré-levée),Stomp Aqua,30,Moderate,Wide,Sandy Loam, Wheat,Sunflower,Carrot,Carrot
+Pepper,5,650,100,70,90,30,60,2500,,,40,Moderate,Wide,Loamy,Tomato,Onion,Legumes ,Legumes 
+Pepper,5,650,100,70,90,30,60,2500,,,40,Moderate,Wide,Loamy, Maize,Mustard,Wheat ,Wheat 
+Pepper,5,650,100,70,90,30,60,2500,,,40,Moderate,Wide,Loamy, Cereal,Carrot,Legumes ,Legumes 
+Pepper,5,650,100,70,90,30,60,2500,,,40,Moderate,Wide,Loamy, Sugarbeet,Sunflower,Peas ,Peas 
+Pepper,5,650,100,70,90,30,60,2500,,,40,Moderate,Wide,Loamy,Cabbage,Onion,Beans,Beans
+Watermelon,6,600,120,50,80,30,150,2800,,,100,Moderate,Wide,Sandy Loam,Legumes,Maize,Sunflower ,Sunflower 
+Watermelon,6,600,120,50,80,30,150,2800,,,100,Moderate,Wide,Sandy Loam, Cereal,Onion,Legumes ,Legumes 
+Watermelon,6,600,120,50,80,30,150,2800,,,100,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Wheat ,Wheat 
+Watermelon,6,600,120,50,80,30,150,2800,,,100,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Maize ,Maize 
+Watermelon,6,600,120,50,80,30,150,2800,,,100,Moderate,Wide,Sandy Loam, Tomato,Peas,Onion,Onion
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy,Legumes,Cereal,Maize ,Maize 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones (post-levée),BASAGRAN,45,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Fava Bean,4,550,110,40,60,25,120,2700,Dicotylédones et graminées (pré-levée),Stomp Aqua,45,Moderate,Wide,Loamy, Tomato,Mustard,Legumes,Legumes
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy,Legumes,Cereal,Maize ,Maize 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy,Legumes,Cereal,Maize ,Maize 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy,Legumes,Cereal,Maize ,Maize 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Mustard,Sunflower,Wheat ,Wheat 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Carrot,Onion,Cabbage ,Cabbage 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Sugarbeet,Peas,Onion ,Onion 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Tomato,Mustard,Legumes,Legumes
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Tomato,Mustard,Legumes,Legumes
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Tomato,Mustard,Legumes,Legumes
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Onion,Carrot,Maize ,Maize 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy,Cabbage,Beans,Sunflower ,Sunflower 
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,BAVISTIN FL,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Oidium,CORBEL,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OSAM,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,OPUS,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Septoriose,REX DUO,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Fusariose,SWING GOLD,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Durum Wheat,5,450,120,100,60,50,100,3000,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Loamy, Tomato,Peas,Mustard,Mustard
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Pea,Onion,Maize ,Maize 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Sugarbeet,Mustard,Wheat ,Wheat 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam,Cabbage,Carrot,Beans ,Beans 
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,BAVISTIN FL,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Oidium,CORBEL,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Traitement d'hiver,FUNGURAN OH,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OSAM,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,OPUS,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Septoriose,REX DUO,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Fusariose,SWING GOLD,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Barley,4.5,400,110,80,50,40,90,2800,Mauvaises herbes annuelles et vivaces,ROUNDUP,20,Moderate,Wide,Sandy Loam, Maize,Pepper,Onion,Onion
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam,Maize,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam,Maize,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam,Maize,Sunflower,Wheat ,Wheat 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam,Cabbage,Carrot,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam,Cabbage,Carrot,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam,Cabbage,Carrot,Legumes ,Legumes 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Sugarbeet,Mustard,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Sugarbeet,Mustard,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Sugarbeet,Mustard,Peas ,Peas 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Tomato,Onion,Beans ,Beans 
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Tomato,Onion,Beans ,Beans 
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Tomato,Onion,Beans ,Beans 
+Chickpea,4,350,100,40,45,30,80,2600,Oidium,BAVISTIN FL,30,Low,Medium,Clay Loam, Wheat,Pea,Cereal,Cereal
+Chickpea,4,350,100,40,45,30,80,2600,Traitement d'hiver,FUNGURAN OH,30,Low,Medium,Clay Loam, Wheat,Pea,Cereal,Cereal
+Chickpea,4,350,100,40,45,30,80,2600,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Low,Medium,Clay Loam, Wheat,Pea,Cereal,Cereal
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy,Legumes,Cereal,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Tomato,Onion,Legumes ,Legumes 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Sugarbeet,Cabbage,Peas ,Peas 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Wheat,Mustard,Sunflower ,Sunflower 
+Lentil,3.8,300,90,35,40,25,75,2500,Oidium,BAVISTIN FL,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Lentil,3.8,300,90,35,40,25,75,2500,Traitement d'hiver,FUNGURAN OH,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Lentil,3.8,300,90,35,40,25,75,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,35,Low,Medium,Loamy, Carrot,Pepper,Onion,Onion
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam,Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam,Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam,Pea,Mustard,Cereal ,Cereal 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Onion,Carrot,Maize ,Maize 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam,Cabbage,Beans,Sunflower ,Sunflower 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard ,Mustard 
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard ,Mustard 
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Tomato,Peas,Mustard ,Mustard 
+Sesame,5,500,110,50,40,35,85,2700,Oidium,BAVISTIN FL,40,Moderate,Wide,Sandy Loam, Wheat,Pepper,Tomato,Tomato
+Sesame,5,500,110,50,40,35,85,2700,Traitement d'hiver,FUNGURAN OH,40,Moderate,Wide,Sandy Loam, Wheat,Pepper,Tomato,Tomato
+Sesame,5,500,110,50,40,35,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,40,Moderate,Wide,Sandy Loam, Wheat,Pepper,Tomato,Tomato
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy,Sugarbeet,Wheat,Legumes ,Legumes 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy,Sugarbeet,Wheat,Legumes ,Legumes 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy,Sugarbeet,Wheat,Legumes ,Legumes 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Mustard,Maize,Carrot ,Carrot 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Mustard,Maize,Carrot ,Carrot 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Mustard,Maize,Carrot ,Carrot 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Sunflower,Pea,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Sunflower,Pea,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Sunflower,Pea,Onion ,Onion 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Maize,Beans,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Maize,Beans,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Maize,Beans,Cabbage ,Cabbage 
+Flax,4.5,450,105,60,50,40,70,2400,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Cereal,Legumes,Onion,Onion
+Flax,4.5,450,105,60,50,40,70,2400,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Cereal,Legumes,Onion,Onion
+Flax,4.5,450,105,60,50,40,70,2400,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Cereal,Legumes,Onion,Onion
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam,Sunflower,Mustard,Beans ,Beans 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Maize,Pea,Carrot ,Carrot 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Wheat,Mustard,Cabbage ,Cabbage 
+Fennel,3.5,320,100,45,35,30,60,2200,,,45,Low,Medium,Sandy Loam, Tomato,Onion,Legumes,Legumes
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy,Sugarbeet,Mustard,Wheat ,Wheat 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy,Cabbage,Carrot,Beans ,Beans 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Maize,Pepper,Onion ,Onion 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Cereal,Legumes,Sunflower ,Sunflower 
+Coriander,3.2,300,95,30,40,25,55,2100,,,35,Low,Small,Loamy, Pea,Onion,Maize,Maize
+Oat,4.2,380,100,70,55,45,90,2700,Oidium,CORBEL,20,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OSAM,20,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OPUS,20,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,REX DUO,20,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Oat,4.2,380,100,70,55,45,90,2700,Fusariose,SWING GOLD,20,Moderate,Wide,Loamy,Legumes,Maize,Sunflower ,Sunflower 
+Oat,4.2,380,100,70,55,45,90,2700,Oidium,CORBEL,20,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OSAM,20,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OPUS,20,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,REX DUO,20,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Oat,4.2,380,100,70,55,45,90,2700,Fusariose,SWING GOLD,20,Moderate,Wide,Loamy, Pea,Mustard,Cereal ,Cereal 
+Oat,4.2,380,100,70,55,45,90,2700,Oidium,CORBEL,20,Moderate,Wide,Loamy, Onion,Carrot,Maize,Maize
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OSAM,20,Moderate,Wide,Loamy, Onion,Carrot,Maize,Maize
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,OPUS,20,Moderate,Wide,Loamy, Onion,Carrot,Maize,Maize
+Oat,4.2,380,100,70,55,45,90,2700,Septoriose,REX DUO,20,Moderate,Wide,Loamy, Onion,Carrot,Maize,Maize
+Oat,4.2,380,100,70,55,45,90,2700,Fusariose,SWING GOLD,20,Moderate,Wide,Loamy, Onion,Carrot,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Oidium,CORBEL,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OSAM,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OPUS,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,REX DUO,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Fusariose,SWING GOLD,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Dicotylédones (post-levée),BASAGRAN,30,High,Wide,Clay Loam,Cereal,Legumes,Sunflower ,Sunflower 
+Sorghum,5.5,600,130,90,60,50,110,3100,Oidium,CORBEL,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OSAM,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OPUS,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,REX DUO,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Fusariose,SWING GOLD,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Dicotylédones (post-levée),BASAGRAN,30,High,Wide,Clay Loam, Tomato,Wheat,Legumes ,Legumes 
+Sorghum,5.5,600,130,90,60,50,110,3100,Oidium,CORBEL,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OSAM,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,OPUS,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Septoriose,REX DUO,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Fusariose,SWING GOLD,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Sorghum,5.5,600,130,90,60,50,110,3100,Dicotylédones (post-levée),BASAGRAN,30,High,Wide,Clay Loam, Mustard,Pea,Maize,Maize
+Caraway,3.8,290,95,35,40,30,50,2000,,,40,Low,Small,Sandy Loam,Mustard,Sunflower,Wheat ,Wheat 
+Caraway,3.8,290,95,35,40,30,50,2000,,,40,Low,Small,Sandy Loam, Sugarbeet,Tomato,Peas ,Peas 
+Caraway,3.8,290,95,35,40,30,50,2000,,,40,Low,Small,Sandy Loam,Cabbage,Carrot,Beans,Beans
+Spinach,3.2,250,85,30,35,25,45,1800,,,30,Low,Medium,Loamy,Cereal,Legumes,Sunflower ,Sunflower 
+Spinach,3.2,250,85,30,35,25,45,1800,,,30,Low,Medium,Loamy, Pea,Onion,Maize ,Maize 
+Spinach,3.2,250,85,30,35,25,45,1800,,,30,Low,Medium,Loamy, Maize,Pepper,Onion,Onion
+Artichoke,4.8,450,120,80,60,50,100,2900,,,50,Moderate,Wide,Loamy,Maize,Legumes,Wheat ,Wheat 
+Artichoke,4.8,450,120,80,60,50,100,2900,,,50,Moderate,Wide,Loamy, Sunflower,Mustard,Beans ,Beans 
+Artichoke,4.8,450,120,80,60,50,100,2900,,,50,Moderate,Wide,Loamy, Sugarbeet,Pea,Carrot,Carrot
+Lettuce,3,280,80,25,30,20,40,1500,,,25,Low,Small,Loamy,Cabbage,Carrot,Beans ,Beans 
+Lettuce,3,280,80,25,30,20,40,1500,,,25,Low,Small,Loamy, Peas,Tomato,Lettuce ,Lettuce 
+Lettuce,3,280,80,25,30,20,40,1500,,,25,Low,Small,Loamy, Onion,Spinach,Maize,Maize
+Radish,2.8,220,60,20,25,15,35,1400,,,20,Low,Small,Sandy Loam,Mustard,Lettuce,Maize ,Maize 
+Radish,2.8,220,60,20,25,15,35,1400,,,20,Low,Small,Sandy Loam, Carrot,Onion,Beans ,Beans 
+Radish,2.8,220,60,20,25,15,35,1400,,,20,Low,Small,Sandy Loam, Sugarbeet,Peas,Spinach,Spinach
+Celery,3.5,300,85,40,35,30,50,1800,,,30,Low,Medium,Clay Loam,Carrot,Onion,Beans ,Beans 
+Celery,3.5,300,85,40,35,30,50,1800,,,30,Low,Medium,Clay Loam, Peas,Sunflower,Maize ,Maize 
+Celery,3.5,300,85,40,35,30,50,1800,,,30,Low,Medium,Clay Loam, Sugarbeet,Cabbage,Lettuce,Lettuce
+Chard,3.2,250,75,30,30,20,45,1700,,,35,Low,Medium,Loamy,Maize,Carrot,Sunflower ,Sunflower 
+Chard,3.2,250,75,30,30,20,45,1700,,,35,Low,Medium,Loamy, Onion,Spinach,Peas ,Peas 
+Chard,3.2,250,75,30,30,20,45,1700,,,35,Low,Medium,Loamy,Cabbage,Mustard,Beans,Beans
+Endive,3,270,85,35,30,25,50,1600,,,30,Low,Medium,Sandy Loam,Spinach,Carrot,Beans ,Beans 
+Endive,3,270,85,35,30,25,50,1600,,,30,Low,Medium,Sandy Loam, Peas,Tomato,Sunflower ,Sunflower 
+Endive,3,270,85,35,30,25,50,1600,,,30,Low,Medium,Sandy Loam, Onion,Maize,Lettuce,Lettuce
+Turnip,3.3,290,80,30,35,25,55,1800,,,30,Low,Medium,Clay Loam,Cereal,Mustard,Beans ,Beans 
+Turnip,3.3,290,80,30,35,25,55,1800,,,30,Low,Medium,Clay Loam, Peas,Sunflower,Maize ,Maize 
+Turnip,3.3,290,80,30,35,25,55,1800,,,30,Low,Medium,Clay Loam,Cabbage,Onion,Carrot,Carrot
+Leek,3.8,310,95,40,35,30,65,1900,,,40,Moderate,Medium,Loamy,Sunflower,Onion,Lettuce ,Lettuce 
+Leek,3.8,310,95,40,35,30,65,1900,,,40,Moderate,Medium,Loamy, Carrot,Maize,Beans ,Beans 
+Leek,3.8,310,95,40,35,30,65,1900,,,40,Moderate,Medium,Loamy, Sugarbeet,Peas,Spinach,Spinach
+Okra,4.5,500,110,50,40,35,90,2500,,,50,Moderate,Wide,Clay Loam,Tomato,Sunflower,Mustard ,Mustard 
+Okra,4.5,500,110,50,40,35,90,2500,,,50,Moderate,Wide,Clay Loam, Maize,Onion,Peas ,Peas 
+Okra,4.5,500,110,50,40,35,90,2500,,,50,Moderate,Wide,Clay Loam, Sugarbeet,Lettuce,Beans,Beans
+Barley,4,350,100,60,50,40,80,2500,Oidium,BAVISTIN FL,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Oidium,CORBEL,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OSAM,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OPUS,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,REX DUO,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Fusariose,SWING GOLD,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Clay Loam,Legumes,Wheat,Sunflower ,Sunflower 
+Barley,4,350,100,60,50,40,80,2500,Oidium,BAVISTIN FL,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Oidium,CORBEL,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OSAM,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OPUS,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Septoriose,REX DUO,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Fusariose,SWING GOLD,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Clay Loam, Maize,Onion,Barley ,Barley 
+Barley,4,350,100,60,50,40,80,2500,Oidium,BAVISTIN FL,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Oidium,CORBEL,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Traitement d'hiver,FUNGURAN OH,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OSAM,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Septoriose,OPUS,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Septoriose,REX DUO,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Fusariose,SWING GOLD,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Barley,4,350,100,60,50,40,80,2500,Mauvaises herbes annuelles et vivaces,ROUNDUP,25,Moderate,Wide,Clay Loam, Peas,Carrot,Cabbage,Cabbage
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,CORBEL,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OSAM,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OPUS,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,REX DUO,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Fusariose,SWING GOLD,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy,Peas,Maize,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,CORBEL,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OSAM,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OPUS,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,REX DUO,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Fusariose,SWING GOLD,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy,Cabbage,Carrot,Wheat ,Wheat 
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,BAVISTIN FL,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Oidium,CORBEL,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Traitement d'hiver,FUNGURAN OH,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OSAM,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,OPUS,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Septoriose,REX DUO,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Fusariose,SWING GOLD,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Durum Wheat,4.2,380,110,70,55,45,85,2700,Mauvaises herbes annuelles et vivaces,ROUNDUP,30,Moderate,Wide,Loamy, Mustard,Sunflower,Legumes,Legumes
+Chickpeas,3.5,250,90,30,30,25,70,2200,,,35,Low,Medium,Sandy Loam,Cereal,Mustard,Sunflower ,Sunflower 
+Chickpeas,3.5,250,90,30,30,25,70,2200,,,35,Low,Medium,Sandy Loam, Peas,Onion,Maize ,Maize 
+Chickpeas,3.5,250,90,30,30,25,70,2200,,,35,Low,Medium,Sandy Loam,Cabbage,Beans,Carrot,Carrot
+Lentils,3.2,230,85,25,30,20,60,2000,,,30,Low,Small,Loamy,Wheat,Sunflower,Maize ,Maize 
+Lentils,3.2,230,85,25,30,20,60,2000,,,30,Low,Small,Loamy, Peas,Cabbage,Carrot ,Carrot 
+Lentils,3.2,230,85,25,30,20,60,2000,,,30,Low,Small,Loamy, Legumes,Mustard,Beans,Beans
+Alfalfa,4.5,600,140,80,70,55,180,3500,,,300,High,Wide,Loamy,Maize,Peas,Alfalfa ,Alfalfa 
+Alfalfa,4.5,600,140,80,70,55,180,3500,,,300,High,Wide,Loamy, Wheat,Onion,Mustard ,Mustard 
+Alfalfa,4.5,600,140,80,70,55,180,3500,,,300,High,Wide,Loamy, Carrot,Sunflower,Beans,Beans
+Alfalfa,4.5,600,140,80,70,55,180,3500,,,300,High,Wide,Loamy,Maize,Peas, Onion,Alfalfa 

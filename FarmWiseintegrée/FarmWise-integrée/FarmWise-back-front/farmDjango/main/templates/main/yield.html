@@ -1,0 +1,630 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Farmix - Crop Yield Prediction</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
+    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=DM+Sans:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/magnific-popup.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/slick.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .prediction-form {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .hidden { display: none; }
+        .prediction-btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .prediction-btn {
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .prediction-btn:hover {
+            transform: translateY(-2px);
+        }
+        .fancy-input {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px 20px;
+            transition: border-color 0.3s ease;
+        }
+        .fancy-input:focus {
+            border-color: #198754;
+            box-shadow: none;
+        }
+        .input-group .mic-btn {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .mic-btn:hover {
+            background-color: #f8f9fa;
+        }
+        .mic-btn.recording {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        /* Temporary debugging style to make hidden fields visible */
+        .debug-visible {
+            display: block !important;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Menu -->
+    <div class="vs-menu-wrapper">
+        <!-- Placeholder for mobile menu content -->
+    </div>
+
+    <!-- Header Area -->
+    <header class="vs-header header-layout1">
+        <!-- Placeholder for header content -->
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcumb-wrapper" data-bg-src="{% static 'main/img/breadcumb/breadcumb-bg.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Crop Yield Prediction</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li>Crop Yield Prediction</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prediction Form Section -->
+    <section class="fertilizer-form-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-dark">📈 Crop Yield Predictor</h2>
+                <p class="text-muted fs-5">Enter crop and irrigation details to predict yield for the harvest year.</p>
+            </div>
+            
+            <div class="form-card mx-auto p-5 shadow-lg prediction-form">
+                <form id="predictionForm" action="{% url 'yield' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="row g-4">
+                        <!-- Station Name -->
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="stationSelect">📍 Station Name</label>
+                            <div class="input-group">
+                                <select class="form-select fancy-input" name="STATIONNAME" id="stationSelect" required aria-describedby="stationHelp">
+                                    <option value="">Select a region</option>
+                                    <option value="Beja">Beja</option>
+                                    <option value="Jendouba">Jendouba</option>
+                                    <option value="Kef">Kef</option>
+                                    <option value="Bizerte">Bizerte</option>
+                                    <option value="Ariana">Ariana</option>
+                                    <option value="Zaghouan">Zaghouan</option>
+                                    <option value="Manouba">Manouba</option>
+                                    <option value="Siliana">Siliana</option>
+                                    <option value="Kairouan">Kairouan</option>
+                                    <option value="Sousse">Sousse</option>
+                                    <option value="Monastir">Monastir</option>
+                                    <option value="Mahdia">Mahdia</option>
+                                    <option value="Nabeul">Nabeul</option>
+                                    <option value="Ben Arous">Ben Arous</option>
+                                    <option value="Tunis">Tunis</option>
+                                    <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                    <option value="Kasserine">Kasserine</option>
+                                    <option value="Gafsa">Gafsa</option>
+                                    <option value="Medenine">Medenine</option>
+                                    <option value="Tozeur">Tozeur</option>
+                                    <option value="Kebili">Kebili</option>
+                                    <option value="Tataouine">Tataouine</option>
+                                    <option value="Gabes">Gabes</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-secondary mic-btn" data-target="stationSelect" aria-label="Use voice input for station selection">
+                                    🎤
+                                </button>
+                            </div>
+                            <small id="stationHelp" class="form-text text-muted">Select your region or use the microphone.</small>
+                        </div>
+
+                        <!-- Crop Type -->
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="cropSelect">🌾 Crop Type</label>
+                            <select class="form-select fancy-input" name="CROP" id="cropSelect" required aria-describedby="cropHelp">
+                                <option value="">Select a crop</option>
+                                <option value="Wheat">Wheat</option>
+                                <option value="Barley">Barley</option>
+                                <option value="Tomatoes">Tomatoes</option>
+                                <option value="Olives">Olives</option>
+                                <option value="Vines">Vines</option>
+                                <option value="Citrus">Citrus</option>
+                                <option value="Almonds">Almonds</option>
+                                <option value="Dates">Dates</option>
+                                <option value="Oasis Cereals">Oasis Cereals</option>
+                            </select>
+                            <small id="cropHelp" class="form-text text-muted">Choose the crop type for prediction.</small>
+                        </div>
+
+                        <!-- Irrigation Type -->
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="irrigationType">💧 Irrigation Type</label>
+                            <select class="form-select fancy-input" name="Irrigation_Type" id="irrigationType" required aria-describedby="irrigationHelp">
+                                <option value="">Select irrigation type</option>
+                                <option value="1">Irrigated</option>
+                                <option value="2">Rainfed</option>
+                            </select>
+                            <small id="irrigationHelp" class="form-text text-muted">Specify the irrigation method.</small>
+                        </div>
+
+                        <!-- Harvest Year -->
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="harvestYear">📅 Harvest Year</label>
+                            <input type="number" class="form-control fancy-input" name="HARVESTYEAR" id="harvestYear" required min="2000" max="2050" aria-describedby="yearHelp">
+                            <small id="yearHelp" class="form-text text-muted">Enter a year between 2000 and 2050.</small>
+                        </div>
+
+                        <!-- Hidden Fields -->
+                        <div class="hidden">
+                            <input type="number" name="CLIMATEZONE" id="climateZone" readonly>
+                            <input type="number" step="0.01" name="LONGITUDE" id="longitude" readonly>
+                            <input type="number" step="0.01" name="LATITUDE" id="latitude" readonly>
+                            <input type="number" name="ELEVATION_METER" id="elevation" readonly>
+                            <input type="number" name="TOTAL_AREA_HA" id="totalArea" readonly>
+                            <input type="number" name="SOWINGMONTH" id="sowingMonth" readonly>
+                            <input type="number" name="NUMBER_OF_CONTRIBUTING_STATIONS" id="contribStations" readonly>
+                            <input type="text" name="COUNTRY" value="Tunisia" readonly>
+                            <select name="model_type" required>
+                                <option value="lstm">Yield Prediction (LSTM)</option>
+                                <option value="xgb">Maturity Days (XGBoost)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="prediction-btn-group">
+                        <button type="submit" class="btn btn-success prediction-btn" data-model="lstm" aria-label="Predict crop yield">📊 Predict Yield</button>
+                        <button type="button" class="btn btn-warning prediction-btn" data-model="xgb" aria-label="Predict maturity days">🌱 Maturity Days</button>
+                        <button type="reset" class="btn btn-secondary prediction-btn" aria-label="Clear form">Clear Form</button>
+                    </div>
+                </form>
+                
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer-wrapper footer-layout1" data-bg-src="{% static 'main/img/bg/footer-bg-1-1.jpg' %}">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-1.png' %}" alt="Phone icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Phone No:</h3>
+                                <p class="media-info"><a href="tel:+21656788168">+216 56 788 168</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-2.png' %}" alt="Email icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Email Address:</h3>
+                                <p class="media-info"><a href="mailto:AgorNexus@Farmwise.com">AgorNexus@Farmwise.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-3.png' %}" alt="Location icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Location:</h3>
+                                <p class="media-info">Ariana, Ariana Soghra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="widget footer-widget">
+                            <div class="vs-widget-about">
+                                <div class="footer-logo">
+                                    <a href="{% url 'index' %}"><img src="{% static 'main/img/PINE--FOREST.png' %}" alt="AgroNexus logo"></a>
+                                </div>
+                                <p class="footer-text">AgroNexus is dedicated to promoting sustainable agriculture practices and providing high-quality fertilizers and products to ensure better farming outcomes across Tunisia.</p>
+                                <div class="footer-social">
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="widget widget_newsletter footer-widget">
+                            <h4 class="widget_title">Subscribe Newsletter</h4>
+                            <div class="newsletter-form">
+                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
+                                <div class="search-btn">
+                                    <input class="form-control" type="email" placeholder="Enter your email...." aria-label="Email address">
+                                    <button type="button" class="icon-btn" aria-label="Submit newsletter"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-xl-between justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <span id="currentYear"></span> <a href="{% url 'index' %}">AgroNexus</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Data Divas</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="copyright-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <a href="#" class="scrollToTop scroll-btn" aria-label="Scroll to top"><i class="far fa-arrow-up"></i></a>
+    <script src="{% static 'main/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'main/js/slick.min.js' %}"></script>
+    <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'main/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'main/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'main/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+
+    <!-- Prediction Form Script -->
+    <script>
+        console.log('Script loaded');
+
+        // Set current year in copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Station Database
+        const stationDatabase = {
+            "Beja": { CLIMATEZONE: 1, LONGITUDE: 9.18, LATITUDE: 36.73, ELEVATION_METER: 159, TOTAL_AREA_HA: 25166, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Jendouba": { CLIMATEZONE: 1, LONGITUDE: 8.77, LATITUDE: 36.5, ELEVATION_METER: 110, TOTAL_AREA_HA: 24000, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Kef": { CLIMATEZONE: 1, LONGITUDE: 8.7, LATITUDE: 36.17, ELEVATION_METER: 560, TOTAL_AREA_HA: 23000, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Bizerte": { CLIMATEZONE: 1, LONGITUDE: 9.87, LATITUDE: 37.27, ELEVATION_METER: 10, TOTAL_AREA_HA: 26000, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Ariana": { CLIMATEZONE: 1, LONGITUDE: 10.1, LATITUDE: 36.87, ELEVATION_METER: 20, TOTAL_AREA_HA: 21000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Zaghouan": { CLIMATEZONE: 1, LONGITUDE: 10.1, LATITUDE: 36.41, ELEVATION_METER: 400, TOTAL_AREA_HA: 22000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Manouba": { CLIMATEZONE: 1, LONGITUDE: 9.91, LATITUDE: 36.73, ELEVATION_METER: 30, TOTAL_AREA_HA: 20500, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Siliana": { CLIMATEZONE: 2, LONGITUDE: 9.37, LATITUDE: 36.06, ELEVATION_METER: 445, TOTAL_AREA_HA: 25000, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Kairouan": { CLIMATEZONE: 2, LONGITUDE: 9.87, LATITUDE: 35.67, ELEVATION_METER: 60, TOTAL_AREA_HA: 25500, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Sousse": { CLIMATEZONE: 2, LONGITUDE: 10.63, LATITUDE: 35.83, ELEVATION_METER: 25, TOTAL_AREA_HA: 27000, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Monastir": { CLIMATEZONE: 2, LONGITUDE: 10.83, LATITUDE: 35.76, ELEVATION_METER: 20, TOTAL_AREA_HA: 26500, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Mahdia": { CLIMATEZONE: 2, LONGITUDE: 11.08, LATITUDE: 35.5, ELEVATION_METER: 10, TOTAL_AREA_HA: 18000, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Nabeul": { CLIMATEZONE: 2, LONGITUDE: 10.73, LATITUDE: 36.46, ELEVATION_METER: 30, TOTAL_AREA_HA: 23000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Ben Arous": { CLIMATEZONE: 2, LONGITUDE: 10.17, LATITUDE: 36.73, ELEVATION_METER: 35, TOTAL_AREA_HA: 24000, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Tunis": { CLIMATEZONE: 2, LONGITUDE: 10.18, LATITUDE: 36.8, ELEVATION_METER: 20, TOTAL_AREA_HA: 24500, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Sidi Bouzid": { CLIMATEZONE: 3, LONGITUDE: 9.48, LATITUDE: 35.03, ELEVATION_METER: 340, TOTAL_AREA_HA: 22000, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Kasserine": { CLIMATEZONE: 3, LONGITUDE: 8.83, LATITUDE: 35.17, ELEVATION_METER: 660, TOTAL_AREA_HA: 21000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Gafsa": { CLIMATEZONE: 3, LONGITUDE: 8.78, LATITUDE: 34.42, ELEVATION_METER: 300, TOTAL_AREA_HA: 20000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Medenine": { CLIMATEZONE: 3, LONGITUDE: 10.5, LATITUDE: 33.36, ELEVATION_METER: 220, TOTAL_AREA_HA: 21500, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Tozeur": { CLIMATEZONE: 4, LONGITUDE: 8.14, LATITUDE: 33.92, ELEVATION_METER: 40, TOTAL_AREA_HA: 19000, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Kebili": { CLIMATEZONE: 4, LONGITUDE: 8.97, LATITUDE: 33.71, ELEVATION_METER: 40, TOTAL_AREA_HA: 19500, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Tataouine": { CLIMATEZONE: 4, LONGITUDE: 10.44, LATITUDE: 32.93, ELEVATION_METER: 250, TOTAL_AREA_HA: 18000, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Gabes": { CLIMATEZONE: 4, LONGITUDE: 10.1, LATITUDE: 33.88, ELEVATION_METER: 10, TOTAL_AREA_HA: 20500, NUMBER_OF_CONTRIBUTING_STATIONS: 1 }
+        };
+
+        // Crop Database
+        const cropDatabase = {
+            "Wheat": { SOWING_MONTH: 11, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Barley": { SOWING_MONTH: 11, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Tomatoes": { SOWING_MONTH: 4, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Olives": { SOWING_MONTH: 3, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Vines": { SOWING_MONTH: 3, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Citrus": { SOWING_MONTH: 2, NUMBER_OF_CONTRIBUTING_STATIONS: 1 },
+            "Almonds": { SOWING_MONTH: 3, NUMBER_OF_CONTRIBUTING_STATIONS: 2 },
+            "Dates": { SOWING_MONTH: 5, NUMBER_OF_CONTRIBUTING_STATIONS: 3 },
+            "Oasis Cereals": { SOWING_MONTH: 11, NUMBER_OF_CONTRIBUTING_STATIONS: 1 }
+        };
+
+        // Auto-fill Station
+        document.getElementById('stationSelect').addEventListener('change', function(e) {
+            console.log('Station changed:', e.target.value);
+            const stationName = e.target.value;
+            const stationData = stationDatabase[stationName];
+            
+            if (stationData) {
+                document.getElementById('climateZone').value = stationData.CLIMATEZONE;
+                document.getElementById('longitude').value = stationData.LONGITUDE;
+                document.getElementById('latitude').value = stationData.LATITUDE;
+                document.getElementById('elevation').value = stationData.ELEVATION_METER;
+                document.getElementById('totalArea').value = stationData.TOTAL_AREA_HA;
+                if (!document.getElementById('cropSelect').value) {
+                    document.getElementById('contribStations').value = stationData.NUMBER_OF_CONTRIBUTING_STATIONS;
+                }
+                console.log('Hidden fields updated:', {
+                    climateZone: document.getElementById('climateZone').value,
+                    longitude: document.getElementById('longitude').value,
+                    latitude: document.getElementById('latitude').value,
+                    elevation: document.getElementById('elevation').value,
+                    totalArea: document.getElementById('totalArea').value,
+                    contribStations: document.getElementById('contribStations').value
+                });
+            }
+        });
+
+        // Auto-fill Crop
+        document.getElementById('cropSelect').addEventListener('change', function(e) {
+            console.log('Crop changed:', e.target.value);
+            const crop = e.target.value;
+            const cropData = cropDatabase[crop];
+            
+            if (cropData) {
+                document.getElementById('sowingMonth').value = cropData.SOWING_MONTH;
+                document.getElementById('contribStations').value = cropData.NUMBER_OF_CONTRIBUTING_STATIONS;
+                console.log('Crop hidden fields updated:', {
+                    sowingMonth: document.getElementById('sowingMonth').value,
+                    contribStations: document.getElementById('contribStations').value
+                });
+            }
+        });
+
+        // Reset Form
+        document.querySelector('.prediction-btn[type="reset"]').addEventListener('click', () => {
+            console.log('Form reset');
+            const form = document.getElementById('predictionForm');
+            form.reset();
+            document.getElementById('climateZone').value = '';
+            document.getElementById('longitude').value = '';
+            document.getElementById('latitude').value = '';
+            document.getElementById('elevation').value = '';
+            document.getElementById('totalArea').value = '';
+            document.getElementById('sowingMonth').value = '';
+            document.getElementById('contribStations').value = '';
+            document.getElementById('result').innerHTML = '';
+        });
+
+        // Model Type Handler
+        document.querySelectorAll('.prediction-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('Model selected:', this.dataset.model);
+                document.querySelector('[name="model_type"]').value = this.dataset.model;
+                if (this.dataset.model === 'xgb') {
+                    document.getElementById('predictionForm').requestSubmit();
+                }
+            });
+        });
+
+        // Form Submission
+        document.getElementById('predictionForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const resultDiv = document.getElementById('result');
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            resultDiv.innerHTML = '<div class="alert alert-info">Processing...</div>';
+
+            // Validation
+            const stationName = formData.get('STATIONNAME');
+            const crop = formData.get('CROP');
+            
+            if (!stationDatabase[stationName]) {
+                resultDiv.innerHTML = `<div class="alert alert-danger">Invalid station: ${stationName}</div>`;
+                return;
+            }
+            
+            if (!cropDatabase[crop]) {
+                resultDiv.innerHTML = `<div class="alert alert-danger">Invalid crop: ${crop}</div>`;
+                return;
+            }
+
+            // Validate hidden fields
+            const requiredFields = ['CLIMATEZONE', 'LONGITUDE', 'LATITUDE', 'ELEVATION_METER', 'TOTAL_AREA_HA', 'SOWINGMONTH', 'NUMBER_OF_CONTRIBUTING_STATIONS'];
+            for (const field of requiredFields) {
+                if (!formData.get(field)) {
+                    resultDiv.innerHTML = `<div class="alert alert-danger">Missing required field: ${field}</div>`;
+                    return;
+                }
+            }
+
+            // Build Payload
+            const payload = {
+                features: {
+                    STATIONNAME: stationName,
+                    CLIMATEZONE: Number(formData.get('CLIMATEZONE')),
+                    CROP: crop,
+                    COUNTRY: formData.get('COUNTRY'),
+                    LONGITUDE: Number(formData.get('LONGITUDE')),
+                    LATITUDE: Number(formData.get('LATITUDE')),
+                    ELEVATION_METER: Number(formData.get('ELEVATION_METER')),
+                    TOTAL_AREA_HA: Number(formData.get('TOTAL_AREA_HA')),
+                    NUMBER_OF_CONTRIBUTING_STATIONS: Number(formData.get('NUMBER_OF_CONTRIBUTING_STATIONS')),
+                    Irrigation_Type: Number(formData.get('Irrigation_Type')),
+                    SOWING_MONTH: Number(formData.get('SOWINGMONTH')),
+                    HARVESTYEAR: Number(formData.get('HARVESTYEAR'))
+                },
+                model_type: formData.get('model_type')
+            };
+
+            try {
+                const response = await fetch('{% url "yield" %}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': csrfToken
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-success">
+                            ${payload.model_type.toUpperCase()} Result: 
+                            ${data.prediction.toFixed(2)}
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-danger">
+                            Error: ${data.error || 'Unknown error'}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="alert alert-danger">
+                        Network Error: ${error.message}
+                    </div>
+                `;
+            }
+        });
+
+        // Voice Recognition Script
+        const stationMappings = {
+            'tunis': 'Tunis',
+            'tounes': 'Tunis',
+            'tuni': 'Tunis',
+            'bizerte': 'Bizerte',
+            'bizertha': 'Bizerte',
+            'ben arous': 'Ben Arous',
+            'ben': 'Ben Arous',
+            'beja': 'Beja',
+            'bé': 'Beja',
+            'bejjaa': 'Beja',
+            'jendouba': 'Jendouba',
+            'jandouba': 'Jendouba',
+            'jénd': 'Jendouba',
+            'kef': 'Kef',
+            'ffff': 'Kef',
+            'kiiff': 'Kef',
+            'kéfff': 'Kef',
+            'kaf': 'Kef',
+            'siliana': 'Siliana',
+            'souce': 'Sousse',
+            'monastir': 'Monastir',
+            'mahdia': 'Mahdia',
+            'kairouan': 'Kairouan',
+            'kasserine': 'Kasserine',
+            'sidi bouzid': 'Sidi Bouzid',
+            'gabes': 'Gabes',
+            'gabès': 'Gabes',
+            'mednine': 'Medenine',
+            'mednine': 'Medenine',
+            'tataouine': 'Tataouine',
+            'tozeur': 'Tozeur',
+            'kebili': 'Kebili',
+            'kébili': 'Kebili',
+            'zaghouan': 'Zaghouan',
+            'nabeul': 'Nabeul'
+        };
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        if (SpeechRecognition) {
+            const micBtn = document.querySelector('.mic-btn');
+            const stationInput = document.getElementById('stationSelect');
+            if (micBtn && stationInput) {
+                const recognition = new SpeechRecognition();
+                recognition.lang = navigator.language.startsWith('ar') ? 'ar-TN' : 'fr-FR';
+                recognition.interimResults = false;
+                recognition.maxAlternatives = 3;
+
+                micBtn.addEventListener('click', () => {
+                    try {
+                        recognition.start();
+                        micBtn.classList.add('recording');
+                    } catch (error) {
+                        showResultMessage('danger', 'Microphone non disponible');
+                    }
+                });
+
+                recognition.onresult = (event) => {
+                    const transcript = Array.from(event.results[0])
+                        .map(result => normalizeText(result.transcript))
+                        .find(t => stationMappings[t]);
+
+                    console.log('Transcript:', transcript);
+
+                    if (transcript) {
+                        const matched = stationMappings[transcript];
+                        stationInput.value = matched;
+                        stationInput.dispatchEvent(new Event('change')); // Trigger change for auto-fill
+                        showResultMessage('success', `Station sélectionnée : ${matched}`);
+                    } else {
+                        showResultMessage('warning', 'Nom non reconnu. Essayez : ' + Object.values(stationMappings).join(', '));
+                    }
+                };
+
+                recognition.onerror = (event) => {
+                    showResultMessage('danger', `Erreur : ${event.error}`);
+                };
+
+                recognition.onend = () => {
+                    micBtn.classList.remove('recording');
+                };
+
+                function normalizeText(text) {
+                    return text.toLowerCase()
+                        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+                        .replace(/[^a-z ]/g, '')
+                        .trim();
+                }
+
+                function showResultMessage(type, message) {
+                    const result = document.getElementById('result');
+                    if (result) {
+                        const div = document.createElement('div');
+                        div.className = `alert alert-${type} mt-2`;
+                        div.textContent = message;
+                        result.appendChild(div);
+                        setTimeout(() => div.remove(), 5000);
+                    }
+                }
+            }
+        } else {
+            document.querySelectorAll('.mic-btn').forEach(btn => btn.remove());
+        }
+    </script>
+</body>
+</html>
+{% endblock %}
