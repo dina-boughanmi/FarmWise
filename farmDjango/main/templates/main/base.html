@@ -100,7 +100,7 @@
                         <li><a href="{% url 'landPrice' %}">Land Price Prediction</a></li>
                         <li><a href="{% url 'yield' %}">Yield Prediction</a></li>
                         <li><a href="{% url 'disease' %}">Plant Diseases</a></li>
-                        <li><a href="service-details.html">Crop Rotation</a></li>
+                        <li><a href="{% url 'cropRotation' %}">Crop Rotation</a></li>
                         <li><a href="{% url 'voluntary' %}">Voluntary plants</a></li>
                     </ul>
                 </li>
@@ -176,7 +176,7 @@
                                                 <li><a href="{% url 'landPrice' %}">Land Price Prediction</a></li>
                                                 <li><a href="{% url 'yield' %}">Yield Prediction</a></li>
                                                 <li><a href="{% url 'disease' %}">Plant Diseases</a></li>
-                                                <li><a href="service-details.html">Crop Rotation</a></li>
+                                                <li><a href="{% url 'cropRotation' %}">Crop Rotation</a></li>
                                                 <li><a href="{% url 'voluntary' %}">Voluntary plants</a></li>
 
 
@@ -378,7 +378,7 @@
                         <div class="service-img"><img src="{% static 'main/img/service/service-1-5.jpg' %}" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="{% static 'main/img/icon/ble.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Crop Rotation Planner</a></h3>
+                            <h3 class="service-title h5"><a href="{% url 'cropRotation' %}">Crop Rotation Planner</a></h3>
                             <p class="service-text">Design sustainable crop rotation plans to preserve soil health and productivity.</p>
                         </div>
                         <div class="link-btn">
