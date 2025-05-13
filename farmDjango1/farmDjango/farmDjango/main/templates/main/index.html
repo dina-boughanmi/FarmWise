@@ -1,0 +1,748 @@
+
+<!-- index.html -->
+
+<!doctype html>
+{% load static %}
+
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Jan 2025 20:20:36 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Farmix - Agriculture & Farming Food Template - Home One</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
+    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=DM+Sans:wght@400&amp;display=swap" rel="stylesheet">
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="{% static 'main/css/fontawesome.min.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'main/css/magnific-popup.min.css' %}">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="{% static 'main/css/slick.min.css' %}">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/S.css' %}">
+
+</head>
+
+<body>
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+  <!--==============================
+    Mobile Menu
+    ============================== -->
+<div class="vs-menu-wrapper">
+    <div class="vs-menu-area text-center">
+        <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <img src="{% static 'main/img/PINE--FOREST.png' %}" alt="Description">
+        </div>
+        <div class="vs-mobile-menu">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">About Us</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'service' %}">Service</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'fertilizer' %}">Dosage Prediction</a></li>
+                        <li><a href="{% url 'landPrice' %}">Land Price Prediction</a></li>
+                        <li><a href="{% url 'yield' %}">Yield Prediction</a></li>
+                        <li><a href="{% url 'disease' %}">Plant Diseases</a></li>
+                        <li><a href="service-details.html">Crop Rotation</a></li>
+                        <li><a href="{% url 'voluntary' %}">Voluntary plants</a></li>
+                    </ul>
+                </li>
+               
+                <li>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+   
+    <!--==============================
+    Header Area
+    ==============================-->
+    <header class="vs-header header-layout2">
+        <div class="container">
+            <div class="header-top">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <div class="header-links">
+                            <ul>
+                                <li><i class="far fa-map-marker-alt"></i>Ariana, Ariana Soghra</li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:info@example.com">AgorNexus@Farmwise.com</a></li>
+                                <li><i class="far fa-phone-alt"></i><a href="tel:+4733378901">+216 56 788 168</a></li>
+                               <!-- <li><i class="far fa-clock"></i>Mon - Sat: 09.00 to 06.00</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-style1">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <div class="container" >
+                    <div class="menu-area">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo">
+                                    <a href="index-2.html">
+                                        <img src="{% static 'main/img/PINE--FOREST.png' %}" alt="logo"
+                                        class="header-logo"
+                                        style="max-width: 250px; padding: 0 !important; margin: 0 !important;">
+                                                                       </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <nav class="main-menu menu-style1 d-none d-lg-block">
+                                    <ul>
+                                        <li class>
+                                            <a href="{% url 'index' %}">Home</a>
+                                           
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'about' %}">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="{% url 'service' %}">Service</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'fertilizer' %}">Dosage Prediction</a></li>
+                                                <li><a href="{% url 'landPrice' %}">Land Price Prediction</a></li>
+                                                <li><a href="{% url 'yield' %}">Yield Prediction</a></li>
+                                                <li><a href="{% url 'disease' %}">Plant Diseases</a></li>
+                                                <li><a href="service-details.html">Crop Rotation</a></li>
+                                                <li><a href="{% url 'voluntary' %}">Voluntary plants</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                       
+                                        
+                                        <li>
+                                            <a href="{% url 'contact' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-auto d-lg-none">
+                                <button class="vs-menu-toggle d-inline-block">
+                                    <i class="fal fa-bars"></i>                                           
+                                </button>
+                            </div>
+                            <div class="col-auto d-xl-block d-none">
+                                <div class="header-icons">
+                                    <a href="{% url 'login' %}" class="link-btn"><i class="fal fa-user"></i>Login</a>
+                                    <a href="{% url 'signup' %}" class="link-btn"><i class="fas fa-user-plus"></i> Sign Up</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--==============================
+    Hero Area
+    ============================== -->
+    <div class="hero-layout1">
+        <div class="position-relative">
+          <div class="vs-carousel hero-slider1" data-slide-show="1" data-autoplay="true" data-fade="true">
+            
+            <!-- Slide 1: Fertilizer Optimization -->
+            <div class="hero-slide" data-bg-src="{% static 'main/img/bg/hero-bg-1-1.jpg' %}">
+              <div class="container">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="hero-content text-center">
+                      <h1 class="hero-title">Smart Fertilizer Use with AgroNexus</h1>
+                      <p class="hero-text">Boost yields and reduce waste with accurate fertilizer dosage tailored for Tunisia.</p>
+                      <a href="about.html" class="vs-btn">Discover More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 2: Crop Health -->
+            <div class="hero-slide" data-bg-src="{% static 'main/img/bg/hero-bg-1-2.jpg' %}">
+              <div class="container">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="hero-content text-center">
+                      <h1 class="hero-title">Protect Your Crops</h1>
+                      <p class="hero-text">Detect diseases early and get the best treatment tips right when you need them.</p>
+                      <a href="about.html" class="vs-btn">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 3: Land & Yield Insights -->
+            <div class="hero-slide" data-bg-src="{% static 'main/img/bg/hero-bg-1-3.jpg' %}">
+              <div class="container">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="hero-content text-center">
+                      <h1 class="hero-title">Agriculture Intelligence for Tunisia</h1>
+                      <p class="hero-text">Yield predictions, land prices, and smart crop planning – all in one platform.</p>
+                      <a href="about.html" class="vs-btn">Explore AgroNexus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+          <div>
+            <button class="icon-btn slick-prev" data-slick-prev=".hero-slider1"><i class="fas fa-angle-double-left"></i></button>
+            <button class="icon-btn slick-next" data-slick-next=".hero-slider1"><i class="fas fa-angle-double-right"></i></button>
+          </div>
+        </div>
+      </div>
+      
+    <!--==============================
+    Service Area
+    ============================== -->
+    <div class="service-layout1">
+        <div class="container">
+            <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
+                
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-1.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-1.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/engrais.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="{% url 'fertilizer' %}">Fertilizer Optimization</a></h3>
+                            <p class="service-text">Accurate fertilizer dosage recommendations to improve yield and minimize waste in Tunisia.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="{% url 'fertilizer' %}">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-2.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-2.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/famine.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="service-details.html">Crop Disease Diagnosis</a></h3>
+                            <p class="service-text">Early identification of crop diseases and guidance on effective treatments for farmers.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="{% url 'disease' %}">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-3.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-3.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/rendement.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="service-details.html">Yield Estimation</a></h3>
+                            <p class="service-text">Predict crop yield and maturity time using climate and crop-specific data.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-4.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-4.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/terrain.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="service-details.html">Land Price Analysis</a></h3>
+                            <p class="service-text">Insights into land prices across Tunisia to support smart agricultural investments.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-5.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-5.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/service-icon-1-5.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="service-details.html">Volunteer Plant ID</a></h3>
+                            <p class="service-text">Identify unknown plants to know whether they're beneficial herbs or harmful weeds.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-auto">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="{% static 'main/img/service/service-1-5.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="{% static 'main/img/service/service-1-5.jpg' %}" alt="service thumbnail"></div>
+                        <div class="service-inner">
+                            <div class="service-icon"><img src="{% static 'main/img/icon/ble.png' %}" alt="icon" style="width: 50px; height: 50px;"></div>
+                            <h3 class="service-title h5"><a href="service-details.html">Crop Rotation Planner</a></h3>
+                            <p class="service-text">Design sustainable crop rotation plans to preserve soil health and productivity.</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--==============================
+    About Area
+    ============================== -->
+
+    <!--==============================
+    Selling Area
+    ============================== -->
+
+    <!--==============================
+    Process Area
+    ============================== -->
+
+    <!--==============================
+    Project Area
+    ============================== -->
+   
+    <!--==============================
+    Counter Area
+    ============================== -->
+    <section class="counter-layout1 space"  data-bg-src="{% static 'main/img/bg/counter-bg.jpg' %}">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-7">
+                    <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                        <div class="title-img">
+                            <img src="{% static 'main/img/smallLogo.png' %}" alt="title logo">
+                        </div>
+                        <h2 class="sec-title">Your Start into the Future of Farming</h2>
+                        <span class="sec-subtitle">placing pressure on agriculture to meeting the demands of the future</span>
+                        <a href="#" class="vs-btn">Start Discussion!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row z-index-common g-5 justify-content-lg-between justify-content-center">
+                <div class="col-xl-auto col-lg-4 col-md-6">
+                    <div class="media-style">
+                        <div class="media-inner">
+                            <div class="media-icon">
+                                <div class="icon">
+                                    <img src="{% static 'main/img/icon/counter-icon1.png' %}" alt="counter-icon">
+                                </div>
+                            </div>
+                            <div class="media-counter">
+                                <div class="media-count">
+                                    <h2 class="media-title counter-number" data-count="3145">00</h2>
+                                    <span class="media-count_icon"><i class="far fa-plus"></i></span>
+                                </div>
+                                <p class="media-text">Organic Products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-auto col-lg-4 col-md-6">
+                    <div class="media-style">
+                        <div class="media-inner">
+                            <div class="media-icon">
+                                <div class="icon">
+                                    <img src="{% static 'main/img/icon/counter-icon2.png' %}" alt="counter-icon">
+                                </div>
+                            </div>
+                            <div class="media-counter">
+                                <div class="media-count">
+                                    <h2 class="media-title counter-number" data-count="100">00</h2>
+                                    <span class="media-count_icon"><i class="far fa-percent"></i></span>
+                                </div>
+                                <p class="media-text">Organic Guaranteed</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-auto col-lg-4 col-md-6">
+                    <div class="media-style">
+                        <div class="media-inner">
+                            <div class="media-icon">
+                                <div class="icon">
+                                    <img src="{% static 'main/img/icon/counter-icon3.png' %}" alt="counter-icon">
+                                </div>
+                            </div>
+                            <div class="media-counter">
+                                <div class="media-count">
+                                    <h2 class="media-title counter-number" data-count="160">00</h2>
+                                    <span class="media-count_icon"><i class="far fa-plus"></i></span>
+                                </div>
+                                <p class="media-text">Qualified Formers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-auto col-lg-4 col-md-6">
+                    <div class="media-style">
+                        <div class="media-inner">
+                            <div class="media-icon">
+                                <div class="icon">
+                                    <img src="{% static 'main/img/icon/counter-icon4.png' %}" alt="counter-icon">
+                                </div>
+                            </div>
+                            <div class="media-counter">
+                                <div class="media-count">
+                                    <h2 class="media-title counter-number" data-count="310">00</h2>
+                                    <span class="media-count_icon"><i class="far fa-plus"></i></span>
+                                </div>
+                                <p class="media-text">Agreculture Firm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup moving z-index d-none d-lg-block" style="right: 8%; bottom: 22%;"><img src="{% static 'main/img/shep/about-shep-1.png' %}" alt="shapes"></div>
+    </section>
+    <!--==============================
+    Testmonial Area
+    ============================== -->
+
+    <!--==============================
+    Blog Area
+    ============================== -->
+    <section class="blog-layout1 space-bottom">
+        <div class="container">
+            <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                <div class="title-img">
+                    <img src="{% static 'main/img/smallLogo.png' %}" alt="title logo">
+                </div>
+                <span class="sec-subtitle">Blog & News</span>
+                <h2 class="sec-title">Recent Articles</h2>
+            </div>
+            <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="true">
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="{% static 'main/img/blog/blog-img-1-1.jpg' %}" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                            </div>
+                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
+                            <div class="blog-inner-author">
+                                <img src="{% static 'main/img/blog/blog-auth-1-1.png' %}" alt="blog author">
+                                <div class="text">
+                                    by <a href="blog.html">Jakki James</a>
+                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="{% static 'main/img/blog/blog-img-1-2.jpg' %}" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                            </div>
+                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Releases Their Initial Annual</a></h2>
+                            <div class="blog-inner-author">
+                                <img src="{% static 'main/img/blog/blog-auth-1-1.png' %}" alt="blog author">
+                                <div class="text">
+                                    by <a href="blog.html">Jakki James</a>
+                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="{% static 'main/img/blog/blog-img-1-3.jpg' %}" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                            </div>
+                            <h2 class="blog-title"><a href="blog-details.html">First Annual Report by Harvest is Published</a></h2>
+                            <div class="blog-inner-author">
+                                <img src="{% static 'main/img/blog/blog-auth-1-1.png' %}" alt="blog author">
+                                <div class="text">
+                                    by <a href="blog.html">Jakki James</a>
+                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="{% static 'main/img/blog/blog-img-1-4.jpg' %}" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                            </div>
+                            <h2 class="blog-title"><a href="blog-details.html">Harvest Issues London Its  Annual Report</a></h2>
+                            <div class="blog-inner-author">
+                                <img src="{% static 'main/img/blog/blog-auth-1-1.png' %}" alt="blog author">
+                                <div class="text">
+                                    by <a href="blog.html">Jakki James</a>
+                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-btn">
+                <a href="blog.html" class="vs-btn">View All News</a>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Brand Area
+    ============================== -->
+    <div class="brand-layout1 space-bottom">
+        <div class="container">
+            <div class="row vs-carousel z-index-common" data-arrows="false" data-wow-delay="0.4s" data-slide-show="6"
+                data-lg-slide-show="4" data-md-slide-show="4" data-xs-slide-show="2" data-center-mode="true" data-autoplay="true">
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-1.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-2.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-3.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-4.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-5.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-6.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-1.png' %}" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="bran-img">
+                            <img src="{% static 'main/img/brand/brand-2.png' %}" alt="brand">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+    <!--==============================
+			Footer Area
+	==============================-->
+
+    <footer class="footer-wrapper  footer-layout1" data-bg-src="{% static 'main/img/bg/footer-bg-1-1.jpg' %}">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-1.png' %}" alt="icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Phone No:</h3>
+                                <p class="media-info"><a href="tel:+88013004451">+216 56 788 168</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-2.png' %}" alt="icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Email Address:</h3>
+                                <p class="media-info"><a href="mailto:example@domain.com">AgorNexus@Farmwise.com</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="media-style1">
+                            <div class="media-icon"><img src="{% static 'main/img/icon/icon-1-3.png' %}" alt="icon"></div>
+                            <div class="media-body">
+                                <h3 class="media-title">Locatoin:</h3>
+                                <p class="media-info">Ariana, Ariana Soghra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="widget footer-widget">
+                            <div class="vs-widget-about">
+                                <div class="footer-logo">
+                                    <a href="index-2.html"><img src="{% static 'main/img/PINE--FOREST.png' %}" alt="logo"></a>
+                                </div>
+                                <p class="footer-text">AgroNexus is dedicated to promoting sustainable agriculture practices and providing high-quality fertilizers and products to ensure better farming outcomes across Tunisia.</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xl-4">
+                        <div class="widget widget_newsletter footer-widget">
+                            <h4 class="widget_title">Subscribe Newsletter</h4>
+                            <form class="newsletter-form">
+                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
+                                <div class="search-btn">
+                                    <input class="form-control" type="email" placeholder="Enter your email....">
+                                    <button type="submit" class="icon-btn"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-xl-between justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a href="index-2.html">AgroNexus</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Data Divas</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="copyright-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="{% static 'main/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'main/js/slick.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'main/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Isotope Filter -->
+    <script src="{% static 'main/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'main/js/isotope.pkgd.min.js' %}"></script>
+    <!-- Main Js File -->
+    <script src="{% static 'main/js/main.js' %}"></script>
+
+
+</body>
+
+
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Jan 2025 20:21:04 GMT -->
+</html>
